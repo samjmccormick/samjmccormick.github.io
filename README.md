@@ -5,7 +5,7 @@ This is the README file for my personal website. First of all, welcome, please m
 
 This is also my first README, in case that isn't obvious, so please refrain from anything other than glowing praise. 
 
-So this will consist of an html sheet, a CSS style sheet, and I guess maybe javascript once I learn what that is. 
+So this will consist of an html sheet, a CSS style sheet, and I guess maybe a javascript sheet once I learn what that is. 
 
 The goals of the website are as follows: 
 
