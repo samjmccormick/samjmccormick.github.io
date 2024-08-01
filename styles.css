@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /* global styling */
@@ -22,6 +22,13 @@ ul {
 html {
 	scroll-behavior: smooth;
 	background-color: var(--main-tan);
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+	
 }
 
 /* Header Styling */
@@ -36,13 +43,14 @@ header {
 	background-color: var(--main-tan2);
 	width: 80%;
 	margin: auto;
+	font-size: 2.0rem;
 }
 
 img {
-	height: 20%;
+	height: 100%;
 	border-radius: 50%;
 	border: 5px solid ;
-	
+	margin: 0 10px;
 }
 
 .about {
@@ -50,6 +58,8 @@ img {
 	justify-content: center;
 	align-items: center;
 	text-wrap: wrap;
+	height: 20%;
+	
 }
 
 #about {
@@ -57,7 +67,17 @@ img {
 	justify-content: space-around;
 	align-items: flex-start;
 	flex-direction: column;
-	height: 20%
+	height: 100%;
+	padding: 0 10px;
+}
+ 
+#nav-bar {
+	width: 100%;
+}
+
+#nav-bar ul {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Projects Styling */
