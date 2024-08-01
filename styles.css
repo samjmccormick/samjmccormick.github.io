@@ -1,0 +1,67 @@
+/* Variables */
+
+:root {
+	--main-tan: #f5e1b8;
+	--main-tan2: #f7dca3;
+}
+
+/* Base reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styling */
+
+ul {
+	list-style: none;
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--main-tan);
+}
+
+/* Header Styling */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100vh;
+	background-color: var(--main-tan2);
+	width: 80%;
+	margin: auto;
+}
+
+img {
+	height: 20%;
+	border-radius: 50%;
+	border: 5px solid ;
+	
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-wrap: wrap;
+}
+
+#about {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 20%
+}
+
+/* Projects Styling */
+
+
+/* Connect Styling */
+
