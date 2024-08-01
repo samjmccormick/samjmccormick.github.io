@@ -1,84 +1,96 @@
-/* Variables */
+/* variables and imports */ 
 
 :root {
-	--main-tan: #f5e1b8;
-	--main-tan2: #f7dca3;
+  --about-color: #E0F0FF;
+  --background-color: #FFEFE0;
 }
 
-/* Base reset */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* Base reset */
 * {
   margin: 0;
   padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-/* global styling */
-
-ul {
-	list-style: none;
-}
-
 html {
-	scroll-behavior: smooth;
-	background-color: var(--main-tan);
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
+/* Base styles */
 
 a {
-	text-decoration: none;
-	
+  text-decoration: none;
 }
 
-/* Header Styling */
-
-header {
-	position: sticky;
-	z-index: 1;
-}
-
-
-
-.about {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background-color: var(--main-tan2);
-	width: 80%;
-	margin: auto;
-	font-size: 2.0rem;
-	
+ul {
+  list-style: none;
 }
 
 img {
-	height: 20%;
-	border-radius: 50%;
-	border: 5px solid ;
-	margin: 0 10px;
+	display: block;
+	width: 100%;
 }
 
-#about {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-direction: column;
-	height: 20%;
-	padding: 0 10px;
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.8rem;
+	background-color: var(--background-color);
 }
- 
+
+/* nav */
+
 #nav-bar {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
+	z-index: 10;
 }
 
 #nav-bar ul {
 	display: flex;
-	justify-content: space-around;
+	
 }
 
-/* Projects Styling */
+/* about */ 
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  border-radius: 20%;
+  background-color: var(--about-color);
+}
 
-/* Connect Styling */
+#headshot {
+	width: 20%;
+	border-radius: 50%;
+}
 
+h2 {
+	font-weight: 300;
+	font-size: 2.0rem;
+}
+
+.about p {
+	
+}
