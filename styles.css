@@ -27,6 +27,7 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-image: linear-gradient(to right, var(--background-color), var(--about-color) 20%, var(--about-color) 80%, var(--background-color));
 }
 
 /* Base styles */
@@ -47,7 +48,9 @@ img {
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.8rem;
-	background-color: var(--background-color);
+	width: 80%;
+	margin: auto;
+	/* background-color: var(--background-color); */
 }
 
 /* nav */
@@ -57,13 +60,16 @@ body {
 	justify-content: center;
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 100%;
+	width: 80%;
 	z-index: 10;
+	margin: 1em auto;
+	font-weight: 600;
 }
 
 #nav-bar ul {
 	display: flex;
+	justify-content: space-around;
+	width: 100%;
 	
 }
 
@@ -74,15 +80,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
   height: 100vh;
-  margin: auto;
-  border-radius: 20%;
-  background-color: var(--about-color);
 }
 
 #headshot {
-	width: 20%;
+	width: 40%;
 	border-radius: 50%;
 }
 
@@ -91,6 +93,3 @@ h2 {
 	font-size: 2.0rem;
 }
 
-.about p {
-	
-}
