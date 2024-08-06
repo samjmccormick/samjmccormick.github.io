@@ -3,6 +3,7 @@
 :root {
   --about-color: #E0F0FF;
   --background-color: #FFEFE0;
+  --font-color: #FFD5AD;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -27,10 +28,12 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-image: linear-gradient(to right, var(--background-color), var(--about-color) 20%, var(--about-color) 80%, var(--background-color));
+  background-image: linear-gradient(to right, var(--background-color), var(--about-color) 5%, var(--about-color) 95%, var(--background-color));
 }
 
 /* Base styles */
+
+/* might need to make a button class */
 
 a {
   text-decoration: none;
@@ -57,20 +60,27 @@ body {
 
 #nav-bar {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	position: fixed;
 	top: 0;
 	width: 80%;
 	z-index: 10;
-	margin: 1em auto;
-	font-weight: 600;
+	margin: auto;
+	padding: 1em 0;
+	font-weight: 800;
+	background-color:  var(--about-color);
+	font-size: 2rem;
 }
 
-#nav-bar ul {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	
+.nav-link {
+
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+	color: var(--font-color);
+	transform: translateY(10px);
+	/* for the animation to not 'snap-back' the transition needs to be in the general rule, not the 'hover rule */
 }
 
 /* about */ 
@@ -92,5 +102,11 @@ h2 {
 	font-weight: 300;
 	font-size: 2.0rem;
 }
+
+/* image with text on hover */
+
+/* https://stackoverflow.com/questions/14149360/text-on-image-mouseover */ 
+
+
 
 /* just adding this to test the branch on my laptop */

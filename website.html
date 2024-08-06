@@ -16,17 +16,13 @@
 	
 		
 		<nav id="nav-bar">
-			<ul>
-				<li >
+			
 					<a href="#about" class="nav-link">About</a>
-				</li>
-				<li>
+				
 					<a href="#projects" class="nav-link">Projects</a>
-				</li>
-				<li>
+				
 					<a href="#connect" class="nav-link">Connect</a>
-				</li>
-			</ul>
+			
 		</nav>	
 		
 		<!-- <audio controls autoplay loop>
@@ -46,19 +42,24 @@
 		<section class="about">
 		
 			
-			
+			<div id="img-text">
 				<img src="headshot.png" alt="headshot" id="headshot" loading="lazy"></img>
+				<p>"Hello, I'm a former mechanical engineer and academic advisor now pursuing web development as a self-taught developer"</p>
+			</div>	
 		
 			
 				<h1>Sam McCormick</h1>
 				<h2><i>Web Developer and Man About Town</i></h2>
-				<p>"Hello, I'm a former mechanical engineer and academic advisor now pursuing web development as a self-taught developer"</p>
+				
 			
 			
 		</section>
 	
 	<!-- This section was causing the page to automatically scroll down when it loaded, literally have no idea why 
 	I re-wrote the section and it worked. Leaving the new section in and putting this section back in also made it work. Really not a clue 
+	
+	I figured this out! it's because I had clickedo on one of the nav links like #projects, and then when I was refreshing the page that was still present 
+	in the URL so it would automatically load to that location! I'm so dumb! 
 	
 	<section id="projects">
 			<ul>
