@@ -98,8 +98,14 @@ body {
 	border-radius: 50%;
 } 
 
+h1 {
+	font-weight: 1000;
+	font-size: 3.0rem;
+}
+
+
 h2 {
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 2.0rem;
 }
 
@@ -107,21 +113,28 @@ h2 {
 
 #img-text {
 	width: 40%;
-
+	position: relative;
 	background-color: var(--background-color);
 	border-radius: 50%;
-	display: flex;
+	
 }
 
-#img-text p {
-	position: relative;
-
+#img-text > p {
+	position: absolute;
+	top: 45%;
+	opacity: 0;
+	text-wrap: wrap;
 	text-align: center;
-	visibility: hidden;
+	transition: opacity .5s ease;
+}
+
+#img-text img {
+	opacity: 1;
+	transition: opacity .7s ease;
 }
 
 #img-text:hover p {
-	visibility: visible;
+	opacity: 1;
 }
 
 #img-text:hover img {
@@ -140,5 +153,14 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
  */ 
 
 
+/* projects */ 
 
-/* just adding this to test the branch on my laptop */
+
+
+
+
+
+/* just adding this to test the branch on my laptop
+	seems like lists actually can make it harder to format sometimes, in the freecodecamp example they only use a list for the nav-links and i ended up 
+	removing that because it was making it hard to do the transition animation 
+ */
