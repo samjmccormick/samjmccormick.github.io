@@ -93,10 +93,10 @@ body {
   height: 100vh;
 }
 
-#headshot {
-	width: 40%;
+ #headshot {
+
 	border-radius: 50%;
-}
+} 
 
 h2 {
 	font-weight: 300;
@@ -105,7 +105,39 @@ h2 {
 
 /* image with text on hover */
 
-/* https://stackoverflow.com/questions/14149360/text-on-image-mouseover */ 
+#img-text {
+	width: 40%;
+
+	background-color: var(--background-color);
+	border-radius: 50%;
+	display: flex;
+}
+
+#img-text p {
+	position: relative;
+
+	text-align: center;
+	visibility: hidden;
+}
+
+#img-text:hover p {
+	visibility: visible;
+}
+
+#img-text:hover img {
+	opacity: 0;
+}
+
+
+/* 
+
+img overlay how-to's
+
+https://stackoverflow.com/questions/14149360/text-on-image-mouseover
+
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+ */ 
 
 
 
