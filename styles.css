@@ -169,7 +169,11 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 .project-grid {
 	display: grid;
-	grid-template-columns
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 80%;
+	margin: 0 auto;
+	
 }
 
 /* just adding this to test the branch on my laptop
