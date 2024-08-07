@@ -173,6 +173,45 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 	grid-gap: 4rem;
 	width: 80%;
 	margin: 0 auto;
+	max-width: 1350px;
+	
+}
+
+.project-tiles {
+	position: relative;
+	background-color: var(--background-color);
+}
+
+.project-img {
+	
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	opacity: 1;
+	transition: opacity 0.7s ease;
+}
+
+.project-description {
+	position: absolute;
+	top: 45%;
+	opacity: 0;
+	text-wrap: wrap;
+	text-align: center;
+	transition: opacity .5s ease;
+}
+
+.project-tiles:hover .project-img {
+	opacity: 0;
+}
+
+.project-tiles:hover .project-description {
+	opacity: 1;
+}
+
+/* connect section */ 
+
+.connect {
+	display: flex;
+	height: 20%;
 	
 }
 
