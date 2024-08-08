@@ -122,6 +122,8 @@ h2 {
 #img-text > p {
 	position: absolute;
 	top: 45%;
+	width: 90%;
+	left: 5%;
 	opacity: 0;
 	text-wrap: wrap;
 	text-align: center;
@@ -193,6 +195,7 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 .project-description {
 	position: absolute;
 	top: 45%;
+	width: 100%;
 	opacity: 0;
 	text-wrap: wrap;
 	text-align: center;
@@ -210,12 +213,31 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 /* connect section */ 
 
 .connect {
+/* 	display: flex;
+	flex-direction: column;
+	justify-content: space-around; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 100%;
+	z-index: 10;
+	padding: 0 1em;
+	font-weight: 600;
+	/* background-color:  var(--about-color); */
+	font-size: 2rem;
+}
+
+.connect-wrapper {
+	rotate: 90deg;
 	display: flex;
-	height: 20%;
+	
 	
 }
+
 
 /* just adding this to test the branch on my laptop
 	seems like lists actually can make it harder to format sometimes, in the freecodecamp example they only use a list for the nav-links and i ended up 
 	removing that because it was making it hard to do the transition animation 
+	also removing lists for socials 
  */
