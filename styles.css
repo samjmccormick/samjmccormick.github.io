@@ -4,6 +4,7 @@
   --about-color: #E0F0FF;
   --background-color: #FFEFE0;
   --font-color: #FFD5AD;
+  --font-color-links: #9799ff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -28,7 +29,12 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-image: linear-gradient(to right, var(--background-color), var(--about-color) 5%, var(--about-color) 95%, var(--background-color));
+  background-image: linear-gradient(to bottom right, var(--about-color) 70%, var(--background-color));
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+/* need to figure out the gradient so it's always in the background regardless of scroll position - update I figured it out with background repeat and attachment */ 
+  
 }
 
 /* Base styles */
@@ -37,6 +43,14 @@ html {
 
 a {
   text-decoration: none;
+}
+
+a:link {
+	color: var(--font-color-links);
+}
+
+a:visited {
+	color: var(--font-color-links);
 }
 
 ul {
@@ -167,6 +181,7 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 	font-weight: 1000;
 	font-size: 3.0rem;
 	margin: 0 auto;
+	padding-bottom: 1rem;
 }
 
 .project-grid {
@@ -229,10 +244,21 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 }
 
 .connect-wrapper {
-	rotate: 90deg;
-	display: flex;
-	
-	
+	/* transform: rotate(90deg); */
+	display: flex;	
+	justify-content: space-around;
+	height: 100%;
+	flex-direction: column;
+}
+
+.connect-links {
+	rotate: -90deg;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.connect-links:hover {
+	color: var(--font-color);
+	transform: translateY(10px);
 }
 
 
