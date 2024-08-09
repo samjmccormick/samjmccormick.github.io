@@ -123,10 +123,11 @@ h2 {
 	font-size: 2.0rem;
 }
 
-/* image with text on hover */
+/* headshot image with text on hover */
 
 #img-text {
-	width: 40%;
+	width: 50%;
+	max-width: 650px;
 	position: relative;
 	background-color: var(--background-color);
 	border-radius: 50%;
@@ -172,7 +173,7 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 /* projects */ 
 
 .projects {
-	height: 100vh;
+	height: ;
 	padding: 4em 0;
 }
 
@@ -238,7 +239,7 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 	height: 100%;
 	z-index: 10;
 	padding: 0 1em;
-	font-weight: 600;
+	font-weight: 800;
 	/* background-color:  var(--about-color); */
 	font-size: 2rem;
 }
