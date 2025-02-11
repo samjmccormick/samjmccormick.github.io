@@ -2,117 +2,232 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="description" content="Sam McCormick Personal Website"/>
-	<meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Web Dev, Software Developer, Software Development"/>
-	<meta name="author" content="Sam McCormick"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sam McCormick Personal Website" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Web Development, Web Dev, Software Developer, Software Development"
+    />
+    <meta name="author" content="Sam McCormick" />
     <title>Sam McCormick Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
-    </head>
+  </head>
 
-<body>
-	<header>
-		<nav id="nav-bar">
-			<a href="#about" class="nav-link">About</a>
-			<a href="#projects" class="nav-link">Projects</a>
-			<a href="#experience" class="nav-link">Experience</a>
-		</nav>	
-	
-	</header>
-	<main>
-		<section id="about" class="about">
-			<div id="img-text">
-				<img src="public/headshot.png" alt="headshot" id="headshot" loading="lazy"></img>
-				<p>"Hello, I'm a former mechanical engineer and academic advisor now pursuing web development as a self-taught developer"</p>
-			</div>	
-				<h1>Sam McCormick</h1>
-				<h2><i>Web Developer and Man About Town</i></h2>
-		</section>
-		<section id="projects" class="projects">
-			<h3 class="project-header">Projects</h3>
-				<div class="project-grid">
-					<a href="" class="project-tiles" target="_blank">
-						<img class="project-img" src="public/storefront-shoppingcart-project.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-					<a href="" class="project-tiles" target="_blank" >
-						<img class="project-img" src="public/members-only-project.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-					<a href="" class="project-tiles" target="_blank" >
-						<img class="project-img" src="public/memory-game.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-					<a href="" class="project-tiles" target="_blank" >
-						<img class="project-img" src="public/resume-project.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-					<a href="" class="project-tiles" target="_blank" >
-						<img class="project-img" src="public/pokemon-search.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-					<a href="" class="project-tiles" target="_blank" >
-						<img class="project-img" src="public/inventory-project.jpg" alt="project"></img>
-						<p class="project-description">Example</p>
-					</a>
-				</div>
-		</section>
-	 	<section id="connect" class="connect">
-			<div class="connect-wrapper">
-				<a href="mailto:samjmccormick@gmail.com" class="connect-links" target="_blank">Email</a>
-				<a href="https://github.com/samjmccormick/" class="connect-links" target="_blank">GitHub</a>
-				<a href="https://www.linkedin.com/in/sam-mccormick-987a50138/" class="connect-links" target="_blank">LinkedIn</a>
-				<a href="https://www.freecodecamp.org/fccf2246e0c-e8ec-4c8c-b751-616f762170ae" class="connect-links" target="_blank">freeCodeCamp</a>
-			</div>
-		</section>  
-		
-		<section id="experience" class="experience">
-			<h3 class="project-header">Experience</h3>
-			<div class="experience-wrapper">
-				<img class="experience-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Oregon_Institute_of_Technology_seal.svg/180px-Oregon_Institute_of_Technology_seal.svg.png"></img>
-				<h4 class="experience-title">Academic Advisor and Retention Coordinator</h4>
-				<p class="sub-heading">Oregon Institute of Technology</p>
-				<ul class="duties">
-					<li>doing stuff</li>
-					<li>doing stuff</li>
-				</ul>
-			</div>
-			<div class="experience-wrapper">
-				<img class="experience-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Oregon_Institute_of_Technology_seal.svg/180px-Oregon_Institute_of_Technology_seal.svg.png"></img>
-				<h4 class="experience-title">Academic Advisor and Retention Coordinator</h4>
-				<p class="sub-heading">Oregon Institute of Technology</p>
-				<ul class="duties">
-					<li>doing stuff</li>
-					<li>doing stuff</li>
-				</ul>
-			</div>
-		</section> 
-	</main> 
-</body>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div id="img-text">
+          <img
+            src="public/headshot.png"
+            alt="headshot"
+            id="headshot"
+            loading="lazy"
+          />
+          <p>
+            "Hello, I'm a former mechanical engineer and academic advisor now
+            pursuing web development as a self-taught developer"
+          </p>
+        </div>
+        <h1>Sam McCormick</h1>
+        <h2><i>Web Developer and Man About Town</i></h2>
+      </section>
+      <section id="projects" class="projects">
+        <h3 class="project-header">Projects</h3>
+        <div class="project-grid">
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/storefront-shoppingcart-project.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Storefront (Odin Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Framework: React and Vite</li>
+                <li>Styling: React-Bootstrap and vanilla CSS</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                A storefront web application that features a product grid
+                displaying items retrieved from the FakeStoreAPI. Users can
+                browse products, fetch more products on demand, view detailed
+                descriptions through an accordion-style toggle, and navigate
+                between pages using a functional navigation bar with pagination.
+                A fully interactive shopping cart allows users to add products,
+                adjust quantities, and view a dynamically updated total cost.
+              </p>
+            </div>
+          </a>
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/members-only-project.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Members Only Message Board (Odin Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Front-End: EJS</li>
+                <li>Styling: Bootstrap and vanilla CSS</li>
+                <li>Back-End: Node.js, Express, and PostgreSQL</li>
+                <li>Authentication: Passport and BCrypt</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                A secure message board with user authentication implemented
+                using Passport. Users can log in with verified identities, and
+                their sessions remain active until the page is reloaded. For
+                security, passwords are hashed before storage. Access to post
+                authors and the ability to create posts is restricted—users must
+                enter a secret member password to unlock these features. All
+                user data and posts are stored in a PostgreSQL database,
+                ensuring efficient data management and retrieval.
+              </p>
+            </div>
+          </a>
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/memory-game.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Memory Card Game (Odin Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Framework: React and Vite</li>
+                <li>Styling: React-Bootstrap and vanilla CSS</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                A memory card game featuring character images from Robohash. The
+                objective is for users to click as many unique images as
+                possible without repeating selections. The game dynamically
+                tracks the current score and displays the session's high score.
+                Each time a card is clicked, the cards are shuffled to increase
+                difficulty, ensuring an engaging and challenging experience.
+              </p>
+            </div>
+          </a>
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/resume-project.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Resume Creator (Odin Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Framework: React and Vite</li>
+                <li>Styling: React-Bootstrap and vanilla CSS</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                A resume creator that allows users to input and format their
+                resumes through interactive forms. Users can add personal
+                information, work experience, and education, with the
+                flexibility to edit or delete any entry. Additional work and
+                educational experiences can be included, along with custom
+                informational fields for each entry to provide further details.
+                The application ensures a user-friendly experience for building,
+                updating, and organizing professional resumes efficiently.
+              </p>
+            </div>
+          </a>
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/pokemon-search.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Pokemon Search (freeCodeCamp Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Vanilla HTML, CSS, and JavaScript</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                This project allows users to search for a Pokémon and retrieve
+                detailed information from the PokeAPI. Upon entering a Pokémon's
+                name or ID, the application fetches and displays relevant data,
+                such as its type, abilities, stats, and sprite. The project
+                provides a simple and interactive way to explore Pokémon details
+                through real-time API integration.
+              </p>
+            </div>
+          </a>
+          <a href="" class="project-tiles" target="_blank">
+            <img
+              class="project-img"
+              src="public/inventory-project.jpg"
+              alt="project"
+            />
+            <div class="project-description">
+              <h3>Inventory Managment (Odin Project)</h3>
+              <h4>Tech Stack:</h4>
+              <ul>
+                <li>Front-End: EJS</li>
+                <li>Styling: Bootstrap and vanilla CSS</li>
+                <li>Back-End: Node.js, Express, and PostgreSQL</li>
+              </ul>
+              <h4>Description:</h4>
+              <p>
+                This project demonstrates inventory management through Pokémon
+                trainers and their Pokémon parties. Users can create, view,
+                update, and delete individual trainers, as well as manage the
+                Pokémon in their parties. Pokémon information is fetched from
+                the PokeAPI and stored in a PostgreSQL database, ensuring that
+                all details about each Pokémon are readily available. Trainers
+                and Pokémon are maintained in separate tables, allowing for
+                structured data organization and efficient retrieval. This
+                system provides a practical example of relational database
+                management while integrating external API data.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="connect" class="connect">
+        <div class="connect-wrapper">
+          <a
+            href="mailto:samjmccormick@gmail.com"
+            class="connect-links"
+            target="_blank"
+            >Email</a
+          >
+          <a
+            href="https://github.com/samjmccormick/"
+            class="connect-links"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sam-mccormick-987a50138/"
+            class="connect-links"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.freecodecamp.org/fccf2246e0c-e8ec-4c8c-b751-616f762170ae"
+            class="connect-links"
+            target="_blank"
+            >freeCodeCamp</a
+          >
+        </div>
+      </section>
+
+      <section id="experience" class="experience"></section>
+    </main>
+  </body>
 </html>
-
-<!-- This section was causing the page to automatically scroll down when it loaded, literally have no idea why 
-	I re-wrote the section and it worked. Leaving the new section in and putting this section back in also made it work. Really not a clue 
-	
-	I figured this out! it's because I had clickedo on one of the nav links like #projects, and then when I was refreshing the page that was still present 
-	in the URL so it would automatically load to that location! I'm so dumb! 
-	
-	<section id="projects">
-			<ul>
-				<li>DJ MCC Services</li>
-				<li>Example</li>
-				<li>Example</li>
-				<li>Example</li>
-				
-			</ul>
-		</section>  -->
-		
-		<!-- <section id="about">
-		<h1>Sam McCormick</h1>
-		<h2>Web Developer and Man About Town</h2>
-			<p>Hello, I'm a former mechanical engineer and academic advisor now pursuing web development as a sefl-taught developer</p>
-		</section> -->
-		
-			<!-- <audio controls autoplay loop>
-			<source src="actuallyslapsforreal-sequence.wav" type="audio/wav">
-		</audio> -->

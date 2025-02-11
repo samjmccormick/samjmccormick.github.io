@@ -207,12 +207,28 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 .project-description {
   position: absolute;
-  top: 45%;
+  top: 5%;
   width: 100%;
   opacity: 0;
   text-wrap: wrap;
   text-align: center;
   transition: opacity 0.5s ease;
+
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.project-description h3 {
+  margin-bottom: 1rem;
+}
+
+.project-description h4 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.project-description li {
+  text-align: left;
 }
 
 .project-tiles:hover .project-img {
