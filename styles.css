@@ -28,15 +28,134 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--about-color) 70%,
-    var(--background-color)
-  );
   height: 100%;
-  background-repeat: no-repeat;
+}
+
+/* Animated Background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 8em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.social {
+  position: fixed;
+  height: 8em;
+  bottom: 0;
+
+  animation: social 10s -3s linear infinite;
+}
+
+.social:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: social 18s linear reverse infinite;
+  left: 40%;
+}
+
+.social:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: social 20s -1s reverse infinite;
+  right: 40%;
+}
+
+.social:nth-of-type(4) {
+  bottom: -2.5em;
+  animation: social 20s -1s reverse infinite;
+  right: 20%;
+}
+
+@keyframes social {
+  2% {
+    transform: translateY(1);
+  }
+
+  25% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  75% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateY(1);
+  }
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  margin: auto;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    #4623d2 3%,
+    #321dcc 38%,
+    #000bc3 68%,
+    #2358d2 98%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
   background-attachment: fixed;
-  /* need to figure out the gradient so it's always in the background regardless of scroll position - update I figured it out with background repeat and attachment */
+  /* background-color: var(--background-color); */
 }
 
 /* Base styles */
@@ -44,7 +163,7 @@ html {
 /* might need to make a button class */
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:link {
@@ -64,12 +183,9 @@ img {
   width: 100%;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.8rem;
+.container {
   width: 80%;
   margin: auto;
-  /* background-color: var(--background-color); */
 }
 
 /* nav */
@@ -218,19 +334,6 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
   padding-right: 2%;
 }
 
-.project-description h3 {
-  margin-bottom: 1rem;
-}
-
-.project-description h4 {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.project-description li {
-  text-align: left;
-}
-
 .project-tiles:hover .project-img {
   opacity: 0;
 }
@@ -279,6 +382,11 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 .experience-img {
   width: 15%;
+}
+
+.svg {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* just adding this to test the branch on my laptop
