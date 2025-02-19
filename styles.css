@@ -183,6 +183,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: whitesmoke;
 }
 
 #headshot {
@@ -197,6 +198,10 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 2rem;
+}
+
+#bio {
+  font-size: 1.5rem;
 }
 
 /* HEADSHOT */
@@ -243,7 +248,6 @@ h2 {
 .card {
   width: 40rem;
   height: 100% !important;
-  box-shadow: 4px 4px 4px gray;
 }
 
 .project-column {
@@ -277,6 +281,10 @@ h2 {
 
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.project-tiles:hover {
+  box-shadow: 0px 0px 20px rgb(194, 194, 194);
 }
 
 .project-tiles:hover .project-img {
