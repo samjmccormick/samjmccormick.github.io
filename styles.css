@@ -7,8 +7,6 @@
   --font-color-links: #a4a5f9;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 /* Base reset */
 * {
   margin: 0;
@@ -29,6 +27,10 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   height: 100%;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Animated Background */
@@ -92,8 +94,9 @@ html {
   }
 }
 
+/* Base styles */
+
 body {
-  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(
     315deg,
@@ -106,8 +109,6 @@ body {
   background-size: 400% 400%;
   background-attachment: fixed;
 }
-
-/* Base styles */
 
 .container {
   max-width: 1000px !important;
@@ -141,12 +142,12 @@ img {
 #nav-bar {
   display: flex;
   justify-content: space-around;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 80%;
+  width: 100%;
   z-index: 10;
-  padding: 1em 0;
-  font-weight: 800;
+  padding: 1rem 0;
+  font-weight: 600;
   font-size: 2rem;
   background: linear-gradient(
     315deg,
@@ -243,6 +244,7 @@ h2 {
 
 .projects {
   height: 100%;
+  padding-top: 6rem;
 }
 
 .card {
@@ -255,18 +257,9 @@ h2 {
   justify-content: center;
 }
 
-.project-header {
-  text-align: center;
-  font-weight: 1000;
-  font-size: 3rem;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-}
-
 .project-img {
   aspect-ratio: 1/1;
   opacity: 1;
-
   transition: opacity 0.7s ease;
 }
 
@@ -274,6 +267,7 @@ h2 {
   position: absolute;
   top: 5%;
   width: 100%;
+  font-size: 1.25rem;
   opacity: 0;
   text-wrap: wrap;
   text-align: center;
@@ -283,8 +277,12 @@ h2 {
   padding-right: 2%;
 }
 
+.project-tiles {
+  transition: box-shadow 0.5s ease;
+}
+
 .project-tiles:hover {
-  box-shadow: 0px 0px 20px rgb(194, 194, 194);
+  box-shadow: 0px 0px 10px 2px var(--font-color);
 }
 
 .project-tiles:hover .project-img {
@@ -293,6 +291,10 @@ h2 {
 
 .project-tiles:hover .project-description {
   opacity: 1;
+}
+
+.card-title {
+  margin-bottom: 0 !important;
 }
 
 /* CONNECT */
