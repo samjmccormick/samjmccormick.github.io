@@ -1,1 +1,1 @@
-# Sam McCormick's Personal Website
+# samjmccormick.com

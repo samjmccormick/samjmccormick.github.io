@@ -4,10 +4,10 @@
   --about-color: #e0f0ff;
   --background-color: #ffefe0;
   --font-color: #ffd5ad;
-  --font-color-links: #9799ff;
+  --font-color-links: #a4a5f9;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Base reset */
 * {
@@ -58,54 +58,6 @@ html {
   z-index: -1;
 }
 
-.social {
-  position: fixed;
-  height: 8em;
-  bottom: 0;
-
-  animation: social 10s -3s linear infinite;
-}
-
-.social:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: social 18s linear reverse infinite;
-  left: 40%;
-}
-
-.social:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: social 20s -1s reverse infinite;
-  right: 40%;
-}
-
-.social:nth-of-type(4) {
-  bottom: -2.5em;
-  animation: social 20s -1s reverse infinite;
-  right: 20%;
-}
-
-@keyframes social {
-  2% {
-    transform: translateY(1);
-  }
-
-  25% {
-    transform: translateY(-25%);
-  }
-
-  50% {
-    transform: translateY(-50%);
-  }
-
-  75% {
-    transform: translateY(-25%);
-  }
-
-  100% {
-    transform: translateY(1);
-  }
-}
-
 .wave:nth-of-type(2) {
   bottom: -1.25em;
   animation: wave 18s linear reverse infinite;
@@ -141,10 +93,8 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
-  margin: auto;
-  overflow: auto;
   background: linear-gradient(
     315deg,
     #4623d2 3%,
@@ -155,12 +105,15 @@ body {
   animation: gradient 20s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
-  /* background-color: var(--background-color); */
 }
 
 /* Base styles */
 
-/* might need to make a button class */
+.container {
+  max-width: 1000px !important;
+  width: 80% !important;
+  margin: auto;
+}
 
 a {
   text-decoration: none !important;
@@ -183,11 +136,6 @@ img {
   width: 100%;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-}
-
 /* nav */
 
 #nav-bar {
@@ -197,24 +145,37 @@ img {
   top: 0;
   width: 80%;
   z-index: 10;
-  margin: auto;
   padding: 1em 0;
   font-weight: 800;
-  background-color: var(--about-color);
   font-size: 2rem;
+  background: linear-gradient(
+    315deg,
+    #4623d2 3%,
+    #321dcc 38%,
+    #000bc3 68%,
+    #2358d2 98%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 .nav-link {
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease !important;
 }
 
 .nav-link:hover {
-  color: var(--font-color);
-  transform: translateY(10px);
+  color: var(--font-color) !important;
+  transform: translateY(8px);
   /* for the animation to not 'snap-back' the transition needs to be in the general rule, not the 'hover rule */
 }
 
-/* about */
+.active {
+  color: var(--font-color) !important;
+  transform: translateY(8px);
+}
+
+/* ABOUT */
 
 .about {
   display: flex;
@@ -238,7 +199,7 @@ h2 {
   font-size: 2rem;
 }
 
-/* headshot image with text on hover */
+/* HEADSHOT */
 
 #img-text {
   width: 50%;
@@ -246,7 +207,7 @@ h2 {
   position: relative;
   background-color: var(--background-color);
   border-radius: 50%;
-  box-shadow: 5px 5px 5px var(--font-color-links);
+  box-shadow: 5px 5px 5px whitesmoke;
 }
 
 #img-text > p {
@@ -273,20 +234,21 @@ h2 {
   opacity: 0;
 }
 
-/* 
-
-img overlay how-to's
-
-https://stackoverflow.com/questions/14149360/text-on-image-mouseover
-
-https://www.w3schools.com/howto/howto_css_image_overlay.asp
-
- */
-
-/* projects */
+/* PROJECTS */
 
 .projects {
-  padding: 4em 0;
+  height: 100%;
+}
+
+.card {
+  width: 40rem;
+  height: 100% !important;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.project-column {
+  display: flex;
+  justify-content: center;
 }
 
 .project-header {
@@ -297,27 +259,10 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
   padding-bottom: 1rem;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1350px;
-}
-
-.project-tiles {
-  position: relative;
-  background-color: var(--background-color);
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px;
-}
-
 .project-img {
-  object-fit: cover;
   aspect-ratio: 1/1;
   opacity: 1;
-  border-radius: 5px;
+
   transition: opacity 0.7s ease;
 }
 
@@ -342,40 +287,56 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
   opacity: 1;
 }
 
-/* connect section */
+/* CONNECT */
 
 .connect {
-  /* 	display: flex;
-	flex-direction: column;
-	justify-content: space-around; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 100%;
-  z-index: 10;
-  padding: 0 1em;
-  font-weight: 800;
-  /* background-color:  var(--about-color); */
-  font-size: 2rem;
-}
-
-.connect-wrapper {
-  /* transform: rotate(90deg); */
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  flex-direction: column;
+  height: 100vh;
 }
 
 .connect-links {
-  rotate: -90deg;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .connect-links:hover {
   color: var(--font-color);
-  transform: translateY(10px);
+}
+
+.social {
+  animation: social 12s linear infinite;
+}
+
+.social:nth-of-type(2) {
+  animation: social 18s linear reverse infinite;
+}
+
+.social:nth-of-type(3) {
+  animation: social 14s reverse infinite;
+}
+
+.social:nth-of-type(4) {
+  animation: social 15s linear reverse infinite;
+}
+
+@keyframes social {
+  2% {
+    transform: translateY(1);
+  }
+
+  25% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  75% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateY(1);
+  }
 }
 
 /* Experience */
@@ -385,8 +346,8 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 }
 
 .svg {
-  width: 4rem;
-  height: 4rem;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 /* just adding this to test the branch on my laptop
