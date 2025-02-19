@@ -69,339 +69,381 @@
           </div>
         </section>
 
-        <section id="projects" class="projects">
-          <div class="container p-3">
-            <div class="row row-cols-1 row-cols-lg-2 g-4">
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-secondary"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/storefront-shoppingcart-project.jpg"
-                    alt="project"
-                  />
-
-                  <div class="card-body d-flex justify-content-evenly">
-                    <h3 class="card-title">Storefront</h3>
-
-                    <img
-                      class="svg"
-                      alt="React Icon"
-                      src="public/icons/React.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Vite Icon"
-                      src="public/icons/Vite.js.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="React Bootstrap Icon"
-                      src="public/icons/React Bootstrap.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="CSS3 Icon"
-                      src="public/icons/CSS3.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      A storefront web application that features a product grid
-                      displaying items retrieved from the FakeStoreAPI. Users
-                      can browse products, fetch more products on demand, view
-                      detailed descriptions through an accordion-style toggle,
-                      and navigate between pages using a functional navigation
-                      bar with pagination. A fully interactive shopping cart
-                      allows users to add products, adjust quantities, and view
-                      a dynamically updated total cost.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-dark"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/members-only-project.jpg"
-                    alt="project"
-                  />
-                  <div class="card-header text-center">
-                    <h3 class="card-title">Members Only Message Board</h3>
-                  </div>
-                  <div class="card-body d-flex justify-content-evenly">
-                    <img
-                      class="svg"
-                      alt="EJS Icon"
-                      src="public/icons/EJS.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Bootstrap Icon"
-                      src="public/icons/Bootstrap.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="JavaScript Icon"
-                      src="public/icons/JavaScript.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="CSS3 Icon"
-                      src="public/icons/CSS3.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Node Icon"
-                      src="public/icons/Node.js.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Express Icon"
-                      src="public/icons/Express.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="PostgreSQL Icon"
-                      src="public/icons/PostgresSQL.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      A secure message board with user authentication
-                      implemented using Passport. Users can log in with verified
-                      identities, and their sessions remain active until the
-                      page is reloaded. For security, passwords are hashed
-                      before storage. Access to post authors and the ability to
-                      create posts is restricted and users must enter a secret
-                      member password to unlock these features. All user data
-                      and posts are stored in a PostgreSQL database, ensuring
-                      efficient data management and retrieval.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-dark"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/memory-game.jpg"
-                    alt="project"
-                  />
-                  <div class="card-header text-center">
-                    <h3 class="card-title">Memory Card Game</h3>
-                  </div>
-                  <div class="card-body d-flex justify-content-evenly">
-                    <img
-                      class="svg"
-                      alt="React Icon"
-                      src="public/icons/React.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Vite Icon"
-                      src="public/icons/Vite.js.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="React Bootstrap Icon"
-                      src="public/icons/React Bootstrap.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="CSS3 Icon"
-                      src="public/icons/CSS3.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      A memory card game featuring character images from
-                      Robohash. The objective is for users to click as many
-                      unique images as possible without repeating selections.
-                      The game dynamically tracks the current score and displays
-                      the session's high score. Each time a card is clicked, the
-                      cards are shuffled to increase difficulty, ensuring an
-                      engaging and challenging experience.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-dark"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/resume-project.jpg"
-                    alt="project"
-                  />
-                  <div class="card-header text-center">
-                    <h3 class="card-title">Resume Creator</h3>
-                  </div>
-                  <div
-                    class="card-footer d-flex flex justify-content-evenly align-content-center"
+        <section
+          id="projects"
+          class="projects d-flex justify-content-center align-items-center"
+        >
+          <div id="carousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-secondary"
+                    target="_blank"
                   >
                     <img
-                      class="svg"
-                      alt="React Icon"
-                      src="public/icons/React.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/storefront-shoppingcart-project.jpg"
+                      alt="project"
                     />
-                    <img
-                      class="svg"
-                      alt="Vite Icon"
-                      src="public/icons/Vite.js.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="React Bootstrap Icon"
-                      src="public/icons/React Bootstrap.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="CSS3 Icon"
-                      src="public/icons/CSS3.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      A resume creator that allows users to input and format
-                      their resumes through interactive forms. Users can add
-                      personal information, work experience, and education, with
-                      the flexibility to edit or delete any entry. Additional
-                      work and educational experiences can be included, along
-                      with custom informational fields for each entry to provide
-                      further details. The application ensures a user-friendly
-                      experience for building, updating, and organizing
-                      professional resumes efficiently.
-                    </p>
-                  </div>
-                </a>
+
+                    <div class="card-body d-flex justify-content-evenly">
+                      <h3 class="card-title">Storefront</h3>
+
+                      <img
+                        class="svg"
+                        alt="React Icon"
+                        src="public/icons/React.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Vite Icon"
+                        src="public/icons/Vite.js.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="React Bootstrap Icon"
+                        src="public/icons/React Bootstrap.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS3 Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        A storefront web application that features a product
+                        grid displaying items retrieved from the FakeStoreAPI.
+                        Users can browse products, fetch more products on
+                        demand, view detailed descriptions through an
+                        accordion-style toggle, and navigate between pages using
+                        a functional navigation bar with pagination. A fully
+                        interactive shopping cart allows users to add products,
+                        adjust quantities, and view a dynamically updated total
+                        cost.
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-dark"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/pokemon-search.jpg"
-                    alt="project"
-                  />
-                  <div class="card-header text-center">
-                    <h3 class="card-title">Pokemon Search</h3>
-                  </div>
-                  <div class="card-body d-flex justify-content-evenly">
+              <div class="carousel-item">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-dark"
+                    target="_blank"
+                  >
                     <img
-                      class="svg"
-                      alt="HTML Icon"
-                      src="public/icons/HTML5.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/members-only-project.jpg"
+                      alt="project"
                     />
-                    <img
-                      class="svg"
-                      alt="Javascript Icon"
-                      src="public/icons/JavaScript.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="CSS Icon"
-                      src="public/icons/CSS3.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      A pokedex that allows users to search for a Pokémon and
-                      retrieve detailed information from the PokeAPI. Upon
-                      entering a Pokémon's name or ID, the application fetches
-                      and displays relevant data, such as its type, abilities,
-                      stats, and sprite. The project provides a simple and
-                      interactive way to explore Pokémon details through
-                      real-time API integration.
-                    </p>
-                  </div>
-                </a>
+                    <div class="card-header text-center">
+                      <h3 class="card-title">Members Only Message Board</h3>
+                    </div>
+                    <div class="card-body d-flex justify-content-evenly">
+                      <img
+                        class="svg"
+                        alt="EJS Icon"
+                        src="public/icons/EJS.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Bootstrap Icon"
+                        src="public/icons/Bootstrap.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="JavaScript Icon"
+                        src="public/icons/JavaScript.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS3 Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Node Icon"
+                        src="public/icons/Node.js.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Express Icon"
+                        src="public/icons/Express.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="PostgreSQL Icon"
+                        src="public/icons/PostgresSQL.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        A secure message board with user authentication
+                        implemented using Passport. Users can log in with
+                        verified identities, and their sessions remain active
+                        until the page is reloaded. For security, passwords are
+                        hashed before storage. Access to post authors and the
+                        ability to create posts is restricted and users must
+                        enter a secret member password to unlock these features.
+                        All user data and posts are stored in a PostgreSQL
+                        database, ensuring efficient data management and
+                        retrieval.
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="col project-column">
-                <a
-                  href=""
-                  class="project-tiles card text-bg-dark"
-                  target="_blank"
-                >
-                  <img
-                    class="project-img card-img-top"
-                    src="public/projects/inventory-project.jpg"
-                    alt="project"
-                  />
-                  <div class="card-header text-center">
-                    <h3 class="card-title">Inventory Management</h3>
-                  </div>
-                  <div class="card-body d-flex justify-content-evenly">
+              <div class="carousel-item">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-dark"
+                    target="_blank"
+                  >
                     <img
-                      class="svg"
-                      alt="EJS Icon"
-                      src="public/icons/EJS.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/memory-game.jpg"
+                      alt="project"
                     />
+                    <div class="card-header text-center">
+                      <h3 class="card-title">Memory Card Game</h3>
+                    </div>
+                    <div class="card-body d-flex justify-content-evenly">
+                      <img
+                        class="svg"
+                        alt="React Icon"
+                        src="public/icons/React.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Vite Icon"
+                        src="public/icons/Vite.js.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="React Bootstrap Icon"
+                        src="public/icons/React Bootstrap.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS3 Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        A memory card game featuring character images from
+                        Robohash. The objective is for users to click as many
+                        unique images as possible without repeating selections.
+                        The game dynamically tracks the current score and
+                        displays the session's high score. Each time a card is
+                        clicked, the cards are shuffled to increase difficulty,
+                        ensuring an engaging and challenging experience.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-dark"
+                    target="_blank"
+                  >
                     <img
-                      class="svg"
-                      alt="Bootstrap Icon"
-                      src="public/icons/Bootstrap.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/resume-project.jpg"
+                      alt="project"
                     />
+                    <div class="card-header text-center">
+                      <h3 class="card-title">Resume Creator</h3>
+                    </div>
+                    <div
+                      class="card-footer d-flex flex justify-content-evenly align-content-center"
+                    >
+                      <img
+                        class="svg"
+                        alt="React Icon"
+                        src="public/icons/React.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Vite Icon"
+                        src="public/icons/Vite.js.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="React Bootstrap Icon"
+                        src="public/icons/React Bootstrap.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS3 Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        A resume creator that allows users to input and format
+                        their resumes through interactive forms. Users can add
+                        personal information, work experience, and education,
+                        with the flexibility to edit or delete any entry.
+                        Additional work and educational experiences can be
+                        included, along with custom informational fields for
+                        each entry to provide further details. The application
+                        ensures a user-friendly experience for building,
+                        updating, and organizing professional resumes
+                        efficiently.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-dark"
+                    target="_blank"
+                  >
                     <img
-                      class="svg"
-                      alt="JavaScript Icon"
-                      src="public/icons/JavaScript.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/pokemon-search.jpg"
+                      alt="project"
                     />
+                    <div class="card-header text-center">
+                      <h3 class="card-title">Pokemon Search</h3>
+                    </div>
+                    <div class="card-body d-flex justify-content-evenly">
+                      <img
+                        class="svg"
+                        alt="HTML Icon"
+                        src="public/icons/HTML5.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Javascript Icon"
+                        src="public/icons/JavaScript.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        A pokedex that allows users to search for a Pokémon and
+                        retrieve detailed information from the PokeAPI. Upon
+                        entering a Pokémon's name or ID, the application fetches
+                        and displays relevant data, such as its type, abilities,
+                        stats, and sprite. The project provides a simple and
+                        interactive way to explore Pokémon details through
+                        real-time API integration.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper d-flex justify-content-center m-2">
+                  <a
+                    href=""
+                    class="project-tiles card text-bg-dark"
+                    target="_blank"
+                  >
                     <img
-                      class="svg"
-                      alt="CSS3 Icon"
-                      src="public/icons/CSS3.svg"
+                      class="project-img card-img-top"
+                      src="public/projects/inventory-project.jpg"
+                      alt="project"
                     />
-                    <img
-                      class="svg"
-                      alt="Node Icon"
-                      src="public/icons/Node.js.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="Express Icon"
-                      src="public/icons/Express.svg"
-                    />
-                    <img
-                      class="svg"
-                      alt="PostgreSQL Icon"
-                      src="public/icons/PostgresSQL.svg"
-                    />
-                  </div>
-                  <div class="project-description">
-                    <p>
-                      Pokemon trainer management app. Users can create, view,
-                      update, and delete individual trainers, as well as manage
-                      the Pokémon in their parties. Pokémon information is
-                      fetched from the PokeAPI and stored in a PostgreSQL
-                      database, ensuring that all details about each Pokémon are
-                      readily available. Trainers and Pokémon are maintained in
-                      separate tables, allowing for structured data organization
-                      and efficient retrieval. This system provides a practical
-                      example of relational database management while
-                      integrating external API data.
-                    </p>
-                  </div>
-                </a>
+                    <div class="card-header text-center">
+                      <h3 class="card-title">Inventory Management</h3>
+                    </div>
+                    <div class="card-body d-flex justify-content-evenly">
+                      <img
+                        class="svg"
+                        alt="EJS Icon"
+                        src="public/icons/EJS.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Bootstrap Icon"
+                        src="public/icons/Bootstrap.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="JavaScript Icon"
+                        src="public/icons/JavaScript.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="CSS3 Icon"
+                        src="public/icons/CSS3.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Node Icon"
+                        src="public/icons/Node.js.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="Express Icon"
+                        src="public/icons/Express.svg"
+                      />
+                      <img
+                        class="svg"
+                        alt="PostgreSQL Icon"
+                        src="public/icons/PostgresSQL.svg"
+                      />
+                    </div>
+                    <div class="project-description">
+                      <p>
+                        Pokemon trainer management app. Users can create, view,
+                        update, and delete individual trainers, as well as
+                        manage the Pokémon in their parties. Pokémon information
+                        is fetched from the PokeAPI and stored in a PostgreSQL
+                        database, ensuring that all details about each Pokémon
+                        are readily available. Trainers and Pokémon are
+                        maintained in separate tables, allowing for structured
+                        data organization and efficient retrieval. This system
+                        provides a practical example of relational database
+                        management while integrating external API data.
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </section>
         <section

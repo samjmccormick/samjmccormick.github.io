@@ -171,7 +171,7 @@ img {
   /* for the animation to not 'snap-back' the transition needs to be in the general rule, not the 'hover rule */
 }
 
-.active {
+.nav-link.active {
   color: var(--font-color) !important;
   transform: translateY(8px);
 }
@@ -243,18 +243,12 @@ h2 {
 /* PROJECTS */
 
 .projects {
-  height: 100%;
-  padding-top: 6rem;
+  height: 100vh;
 }
 
 .card {
   width: 40rem;
   height: 100% !important;
-}
-
-.project-column {
-  display: flex;
-  justify-content: center;
 }
 
 .project-img {
@@ -295,6 +289,10 @@ h2 {
 
 .card-title {
   margin-bottom: 0 !important;
+}
+
+.carousel {
+  width: 100%;
 }
 
 /* CONNECT */
