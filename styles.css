@@ -120,13 +120,6 @@ body {
   margin: auto;
 }
 
-@media screen and (max-width: 675px) {
-  .container {
-    width: 95% !important;
-    margin: auto;
-  }
-}
-
 a {
   text-decoration: none !important;
 }
@@ -225,7 +218,7 @@ h2 {
   position: relative;
   background-color: var(--background-color);
   border-radius: 50%;
-  box-shadow: 5px 5px 5px whitesmoke;
+  box-shadow: 5px 5px 5px rgb(39, 39, 39);
   margin-bottom: 8px;
 }
 
@@ -253,7 +246,7 @@ h2 {
   opacity: 0;
 }
 
-/* PROJECTS */
+/* PROJECTS --------------------------------------------------- */
 
 .projects {
   height: 100vh;
@@ -320,7 +313,7 @@ button:hover {
   color: var(--font-color) !important;
 }
 
-/* CONNECT */
+/* CONNECT ---------------------------------------------- */
 
 .connect {
   height: 100vh;
@@ -372,19 +365,41 @@ button:hover {
   }
 }
 
-/* Experience */
-
-.experience-img {
-  width: 15%;
-}
+/* Icons ------------------------------- */
 
 .svg {
   width: 3.75rem;
   height: 3.75rem;
 }
 
-/* just adding this to test the branch on my laptop
-	seems like lists actually can make it harder to format sometimes, in the freecodecamp example they only use a list for the nav-links and i ended up 
-	removing that because it was making it hard to do the transition animation 
-	also removing lists for socials 
- */
+/* RESPONSIVE @MEDIA QUERIES --------------------------------- */
+
+@media screen and (max-width: 675px) {
+  .carousel-control-prev {
+    justify-content: flex-start !important;
+  }
+
+  .carousel-control-next {
+    justify-content: flex-end !important;
+  }
+
+  .container {
+    width: 95% !important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 80% !important;
+    min-width: 200px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  #nav-bar {
+    font-size: 2rem;
+  }
+}
