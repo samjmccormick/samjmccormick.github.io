@@ -4,10 +4,12 @@
   --about-color: #e0f0ff;
   --background-color: #ffefe0;
   --font-color: #ffd5ad;
-  --font-color-links: #9799ff;
+  --font-color-links: #a4a5f9;
+  --gradiant-color-one: #070063;
+  --gradiant-color-two: #191477;
+  --gradiant-color-three: #221f83;
+  --gradiant-color-four: #2a288e;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Base reset */
 * {
@@ -15,7 +17,7 @@
   padding: 0;
 }
 
-/* box-sizing and font sizing */
+/* box-sizing and font sizing -------------------------------- */
 *,
 *::before,
 *::after {
@@ -28,23 +30,105 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--about-color) 70%,
-    var(--background-color)
-  );
   height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* need to figure out the gradient so it's always in the background regardless of scroll position - update I figured it out with background repeat and attachment */
 }
 
-/* Base styles */
+body * {
+  font-family: "Roboto", sans-serif;
+}
 
-/* might need to make a button class */
+/* Animated Background ------------------------------------------------------------ */
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 11em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+/* Base styles ----------------------------------------------------------------------- */
+
+body {
+  font-size: 1.8rem;
+  background: linear-gradient(
+    315deg,
+    var(--gradiant-color-one) 3%,
+    var(--gradiant-color-two) 38%,
+    var(--gradiant-color-three) 68%,
+    var(--gradiant-color-four) 98%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1000px !important;
+  width: 80% !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 675px) {
+  .container {
+    width: 95% !important;
+    margin: auto;
+  }
+}
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:link {
@@ -64,41 +148,46 @@ img {
   width: 100%;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.8rem;
-  width: 80%;
-  margin: auto;
-  /* background-color: var(--background-color); */
-}
-
-/* nav */
+/* NAV ---------------------------------------------------------- */
 
 #nav-bar {
   display: flex;
   justify-content: space-around;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 80%;
+  width: 100%;
   z-index: 10;
-  margin: auto;
-  padding: 1em 0;
-  font-weight: 800;
-  background-color: var(--about-color);
-  font-size: 2rem;
+  padding: 2rem 0;
+  font-weight: 600;
+  font-size: 2.6rem;
+  background: linear-gradient(
+    315deg,
+    var(--gradiant-color-one) 3%,
+    var(--gradiant-color-two) 38%,
+    var(--gradiant-color-three) 68%,
+    var(--gradiant-color-four) 98%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 .nav-link {
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease !important;
 }
 
 .nav-link:hover {
-  color: var(--font-color);
-  transform: translateY(10px);
+  color: var(--font-color) !important;
+  transform: translateY(8px);
   /* for the animation to not 'snap-back' the transition needs to be in the general rule, not the 'hover rule */
 }
 
-/* about */
+.nav-link.active {
+  color: var(--font-color) !important;
+  transform: translateY(8px);
+}
+
+/* ABOUT ----------------------------------------------------------- */
 
 .about {
   display: flex;
@@ -106,6 +195,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: whitesmoke;
 }
 
 #headshot {
@@ -122,7 +212,12 @@ h2 {
   font-size: 2rem;
 }
 
-/* headshot image with text on hover */
+#bio {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* HEADSHOT */
 
 #img-text {
   width: 50%;
@@ -130,7 +225,8 @@ h2 {
   position: relative;
   background-color: var(--background-color);
   border-radius: 50%;
-  box-shadow: 5px 5px 5px var(--font-color-links);
+  box-shadow: 5px 5px 5px whitesmoke;
+  margin-bottom: 8px;
 }
 
 #img-text > p {
@@ -157,128 +253,134 @@ h2 {
   opacity: 0;
 }
 
-/* 
-
-img overlay how-to's
-
-https://stackoverflow.com/questions/14149360/text-on-image-mouseover
-
-https://www.w3schools.com/howto/howto_css_image_overlay.asp
-
- */
-
-/* projects */
+/* PROJECTS */
 
 .projects {
-  padding: 4em 0;
+  height: 100vh;
 }
 
-.project-header {
-  text-align: center;
-  font-weight: 1000;
-  font-size: 3rem;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1350px;
-}
-
-.project-tiles {
-  position: relative;
-  background-color: var(--background-color);
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px;
+.card {
+  width: 40rem;
+  height: 100% !important;
 }
 
 .project-img {
-  object-fit: cover;
   aspect-ratio: 1/1;
-  opacity: 1;
-  border-radius: 5px;
+  opacity: 0.7;
   transition: opacity 0.7s ease;
 }
 
 .project-description {
   position: absolute;
-  top: 5%;
+  top: 10%;
   width: 100%;
+  font-size: 1.75rem;
   opacity: 0;
   text-wrap: wrap;
   text-align: center;
   transition: opacity 0.5s ease;
-
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
-.project-description h3 {
-  margin-bottom: 1rem;
+.project-tiles {
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
+    0 6px 20px 3px rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.5s ease;
 }
 
-.project-description h4 {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.project-description li {
-  text-align: left;
+.project-tiles:hover {
+  box-shadow: 0px 0px 10px 2px var(--font-color);
 }
 
 .project-tiles:hover .project-img {
-  opacity: 0;
+  opacity: 0.1;
 }
 
 .project-tiles:hover .project-description {
   opacity: 1;
 }
 
-/* connect section */
-
-.connect {
-  /* 	display: flex;
-	flex-direction: column;
-	justify-content: space-around; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 100%;
-  z-index: 10;
-  padding: 0 1em;
-  font-weight: 800;
-  /* background-color:  var(--about-color); */
-  font-size: 2rem;
+.card-title {
+  margin-bottom: 0 !important;
+  font-size: 2.7rem;
+  font-weight: 300;
 }
 
-.connect-wrapper {
-  /* transform: rotate(90deg); */
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  flex-direction: column;
+.carousel {
+  width: 100%;
+}
+
+button {
+  color: var(--font-color-links) !important;
+  opacity: 1 !important;
+}
+
+button:hover {
+  color: var(--font-color) !important;
+}
+
+/* CONNECT */
+
+.connect {
+  height: 100vh;
 }
 
 .connect-links {
-  rotate: -90deg;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .connect-links:hover {
   color: var(--font-color);
-  transform: translateY(10px);
+}
+
+.social {
+  animation: social 12s linear infinite;
+}
+
+.social:nth-of-type(2) {
+  animation: social 18s linear reverse infinite;
+}
+
+.social:nth-of-type(3) {
+  animation: social 14s reverse infinite;
+}
+
+.social:nth-of-type(4) {
+  animation: social 15s linear reverse infinite;
+}
+
+@keyframes social {
+  2% {
+    transform: translateY(1);
+  }
+
+  25% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  75% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateY(1);
+  }
 }
 
 /* Experience */
 
 .experience-img {
   width: 15%;
+}
+
+.svg {
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 /* just adding this to test the branch on my laptop
