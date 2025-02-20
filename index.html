@@ -6,7 +6,7 @@
     <meta name="description" content="Sam McCormick Personal Website" />
     <meta
       name="keywords"
-      content="HTML, CSS, JavaScript, Web Development, Web Dev, Software Developer, Software Development"
+      content="HTML, CSS, JavaScript, Web Development, Web Dev, Software Developer, Software Development, React, Full-Stack, Front-End, Back-End, Sam McCormick, Samuel McCormick, Software Engineer"
     />
     <meta name="author" content="Sam McCormick" />
     <title>Sam McCormick Personal Website</title>
@@ -39,7 +39,9 @@
       <main data-bs-spy="scroll">
         <section id="about" class="about">
           <div class="row">
-            <div class="col-4 text-center justify-content-center">
+            <div
+              class="col-4 text-center d-flex flex-column align-items-center justify-content-evenly"
+            >
               <div id="img-text">
                 <img
                   src="public/headshot.png"
@@ -76,10 +78,10 @@
           <div id="carousel" class="carousel slide" data-bs-ride="true">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
-                    class="project-tiles card text-bg-secondary"
+                    href="https://odin-shoppping-cart.vercel.app/"
+                    class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
                     <img
@@ -87,30 +89,34 @@
                       src="public/projects/storefront-shoppingcart-project.jpg"
                       alt="project"
                     />
-
-                    <div class="card-body d-flex justify-content-evenly">
-                      <h3 class="card-title">Storefront</h3>
-
-                      <img
-                        class="svg"
-                        alt="React Icon"
-                        src="public/icons/React.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Vite Icon"
-                        src="public/icons/Vite.js.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="React Bootstrap Icon"
-                        src="public/icons/React Bootstrap.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS3 Icon"
-                        src="public/icons/CSS3.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Storefront</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="React Icon"
+                            src="public/icons/React.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Vite Icon"
+                            src="public/icons/Vite.js.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="React Bootstrap Icon"
+                            src="public/icons/React Bootstrap.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS3 Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -129,9 +135,9 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
+                    href="https://github.com/samjmccormick/odin-members-only"
                     class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
@@ -140,45 +146,49 @@
                       src="public/projects/members-only-project.jpg"
                       alt="project"
                     />
-                    <div class="card-header text-center">
-                      <h3 class="card-title">Members Only Message Board</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-evenly">
-                      <img
-                        class="svg"
-                        alt="EJS Icon"
-                        src="public/icons/EJS.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Bootstrap Icon"
-                        src="public/icons/Bootstrap.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="JavaScript Icon"
-                        src="public/icons/JavaScript.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS3 Icon"
-                        src="public/icons/CSS3.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Node Icon"
-                        src="public/icons/Node.js.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Express Icon"
-                        src="public/icons/Express.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="PostgreSQL Icon"
-                        src="public/icons/PostgresSQL.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Members Only Message Board</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="EJS Icon"
+                            src="public/icons/EJS.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Bootstrap Icon"
+                            src="public/icons/Bootstrap.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="JavaScript Icon"
+                            src="public/icons/JavaScript.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS3 Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Node Icon"
+                            src="public/icons/Node.js.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Express Icon"
+                            src="public/icons/Express.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="PostgreSQL Icon"
+                            src="public/icons/PostgresSQL.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -198,9 +208,9 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
+                    href="https://memory-card-game-seven-chi.vercel.app/"
                     class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
@@ -209,30 +219,34 @@
                       src="public/projects/memory-game.jpg"
                       alt="project"
                     />
-                    <div class="card-header text-center">
-                      <h3 class="card-title">Memory Card Game</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-evenly">
-                      <img
-                        class="svg"
-                        alt="React Icon"
-                        src="public/icons/React.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Vite Icon"
-                        src="public/icons/Vite.js.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="React Bootstrap Icon"
-                        src="public/icons/React Bootstrap.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS3 Icon"
-                        src="public/icons/CSS3.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Memory Card Game</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="React Icon"
+                            src="public/icons/React.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Vite Icon"
+                            src="public/icons/Vite.js.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="React Bootstrap Icon"
+                            src="public/icons/React Bootstrap.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS3 Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -249,9 +263,9 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
+                    href="https://odin-cv-project-umber.vercel.app/"
                     class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
@@ -260,32 +274,34 @@
                       src="public/projects/resume-project.jpg"
                       alt="project"
                     />
-                    <div class="card-header text-center">
-                      <h3 class="card-title">Resume Creator</h3>
-                    </div>
-                    <div
-                      class="card-footer d-flex flex justify-content-evenly align-content-center"
-                    >
-                      <img
-                        class="svg"
-                        alt="React Icon"
-                        src="public/icons/React.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Vite Icon"
-                        src="public/icons/Vite.js.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="React Bootstrap Icon"
-                        src="public/icons/React Bootstrap.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS3 Icon"
-                        src="public/icons/CSS3.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Resume Creator</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="React Icon"
+                            src="public/icons/React.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Vite Icon"
+                            src="public/icons/Vite.js.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="React Bootstrap Icon"
+                            src="public/icons/React Bootstrap.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS3 Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -305,9 +321,9 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
+                    href="https://github.com/samjmccormick/fcc-pokemon-search"
                     class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
@@ -316,25 +332,29 @@
                       src="public/projects/pokemon-search.jpg"
                       alt="project"
                     />
-                    <div class="card-header text-center">
-                      <h3 class="card-title">Pokemon Search</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-evenly">
-                      <img
-                        class="svg"
-                        alt="HTML Icon"
-                        src="public/icons/HTML5.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Javascript Icon"
-                        src="public/icons/JavaScript.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS Icon"
-                        src="public/icons/CSS3.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Pokemon Search</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="HTML Icon"
+                            src="public/icons/HTML5.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Javascript Icon"
+                            src="public/icons/JavaScript.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -351,9 +371,9 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-2">
+                <div class="card-wrapper d-flex justify-content-center m-4">
                   <a
-                    href=""
+                    href="https://github.com/samjmccormick/odin-inventory"
                     class="project-tiles card text-bg-dark"
                     target="_blank"
                   >
@@ -362,45 +382,49 @@
                       src="public/projects/inventory-project.jpg"
                       alt="project"
                     />
-                    <div class="card-header text-center">
-                      <h3 class="card-title">Inventory Management</h3>
-                    </div>
-                    <div class="card-body d-flex justify-content-evenly">
-                      <img
-                        class="svg"
-                        alt="EJS Icon"
-                        src="public/icons/EJS.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Bootstrap Icon"
-                        src="public/icons/Bootstrap.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="JavaScript Icon"
-                        src="public/icons/JavaScript.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="CSS3 Icon"
-                        src="public/icons/CSS3.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Node Icon"
-                        src="public/icons/Node.js.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="Express Icon"
-                        src="public/icons/Express.svg"
-                      />
-                      <img
-                        class="svg"
-                        alt="PostgreSQL Icon"
-                        src="public/icons/PostgresSQL.svg"
-                      />
+                    <div class="d-flex flex-column justify-content-evenly">
+                      <div class="card-body text-center">
+                        <div class="card-title">Inventory Management</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="card-body d-flex justify-content-evenly">
+                          <img
+                            class="svg"
+                            alt="EJS Icon"
+                            src="public/icons/EJS.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Bootstrap Icon"
+                            src="public/icons/Bootstrap.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="JavaScript Icon"
+                            src="public/icons/JavaScript.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="CSS3 Icon"
+                            src="public/icons/CSS3.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Node Icon"
+                            src="public/icons/Node.js.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="Express Icon"
+                            src="public/icons/Express.svg"
+                          />
+                          <img
+                            class="svg"
+                            alt="PostgreSQL Icon"
+                            src="public/icons/PostgresSQL.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div class="project-description">
                       <p>
@@ -426,10 +450,19 @@
               data-bs-target="#carousel"
               data-bs-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-chevron-compact-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"
+                />
+              </svg>
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -438,10 +471,19 @@
               data-bs-target="#carousel"
               data-bs-slide="next"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-chevron-compact-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"
+                />
+              </svg>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -455,7 +497,8 @@
               href="mailto:samjmccormick@gmail.com"
               class="connect-links"
               target="_blank"
-              ><svg
+              ><div class="visually-hidden">Email Link</div>
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
                 height="60"
@@ -474,7 +517,9 @@
               href="https://github.com/samjmccormick/"
               class="connect-links"
               target="_blank"
-              ><svg
+            >
+              <div class="visually-hidden">Github Link</div>
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
                 height="60"
@@ -493,7 +538,8 @@
               href="https://www.linkedin.com/in/sam-mccormick-987a50138/"
               class="connect-links"
               target="_blank"
-              ><svg
+              ><div class="visually-hidden">LinkedIn Link</div>
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
                 height="60"
@@ -509,7 +555,8 @@
           </div>
           <div class="social">
             <a href="" class="connect-links" target="_blank"
-              ><svg
+              ><div class="visually-hidden">Resume Link</div>
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
                 height="60"

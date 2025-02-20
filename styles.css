@@ -5,6 +5,10 @@
   --background-color: #ffefe0;
   --font-color: #ffd5ad;
   --font-color-links: #a4a5f9;
+  --gradiant-color-one: #070063;
+  --gradiant-color-two: #191477;
+  --gradiant-color-three: #221f83;
+  --gradiant-color-four: #2a288e;
 }
 
 /* Base reset */
@@ -13,7 +17,7 @@
   padding: 0;
 }
 
-/* box-sizing and font sizing */
+/* box-sizing and font sizing -------------------------------- */
 *,
 *::before,
 *::after {
@@ -33,7 +37,7 @@ body * {
   font-family: "Roboto", sans-serif;
 }
 
-/* Animated Background */
+/* Animated Background ------------------------------------------------------------ */
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -51,7 +55,7 @@ body * {
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
-  height: 8em;
+  height: 11em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
@@ -94,16 +98,16 @@ body * {
   }
 }
 
-/* Base styles */
+/* Base styles ----------------------------------------------------------------------- */
 
 body {
   font-size: 1.8rem;
   background: linear-gradient(
     315deg,
-    #4623d2 3%,
-    #321dcc 38%,
-    #000bc3 68%,
-    #2358d2 98%
+    var(--gradiant-color-one) 3%,
+    var(--gradiant-color-two) 38%,
+    var(--gradiant-color-three) 68%,
+    var(--gradiant-color-four) 98%
   );
   animation: gradient 20s ease infinite;
   background-size: 400% 400%;
@@ -114,6 +118,13 @@ body {
   max-width: 1000px !important;
   width: 80% !important;
   margin: auto;
+}
+
+@media screen and (max-width: 675px) {
+  .container {
+    width: 95% !important;
+    margin: auto;
+  }
 }
 
 a {
@@ -137,7 +148,7 @@ img {
   width: 100%;
 }
 
-/* nav */
+/* NAV ---------------------------------------------------------- */
 
 #nav-bar {
   display: flex;
@@ -146,15 +157,15 @@ img {
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 1rem 0;
+  padding: 2rem 0;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.6rem;
   background: linear-gradient(
     315deg,
-    #4623d2 3%,
-    #321dcc 38%,
-    #000bc3 68%,
-    #2358d2 98%
+    var(--gradiant-color-one) 3%,
+    var(--gradiant-color-two) 38%,
+    var(--gradiant-color-three) 68%,
+    var(--gradiant-color-four) 98%
   );
   animation: gradient 20s ease infinite;
   background-size: 400% 400%;
@@ -176,7 +187,7 @@ img {
   transform: translateY(8px);
 }
 
-/* ABOUT */
+/* ABOUT ----------------------------------------------------------- */
 
 .about {
   display: flex;
@@ -203,6 +214,7 @@ h2 {
 
 #bio {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* HEADSHOT */
@@ -214,6 +226,7 @@ h2 {
   background-color: var(--background-color);
   border-radius: 50%;
   box-shadow: 5px 5px 5px whitesmoke;
+  margin-bottom: 8px;
 }
 
 #img-text > p {
@@ -253,25 +266,26 @@ h2 {
 
 .project-img {
   aspect-ratio: 1/1;
-  opacity: 1;
+  opacity: 0.7;
   transition: opacity 0.7s ease;
 }
 
 .project-description {
   position: absolute;
-  top: 5%;
+  top: 10%;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   opacity: 0;
   text-wrap: wrap;
   text-align: center;
   transition: opacity 0.5s ease;
-
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .project-tiles {
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
+    0 6px 20px 3px rgba(0, 0, 0, 0.19);
   transition: box-shadow 0.5s ease;
 }
 
@@ -280,7 +294,7 @@ h2 {
 }
 
 .project-tiles:hover .project-img {
-  opacity: 0;
+  opacity: 0.1;
 }
 
 .project-tiles:hover .project-description {
@@ -289,10 +303,21 @@ h2 {
 
 .card-title {
   margin-bottom: 0 !important;
+  font-size: 2.7rem;
+  font-weight: 300;
 }
 
 .carousel {
   width: 100%;
+}
+
+button {
+  color: var(--font-color-links) !important;
+  opacity: 1 !important;
+}
+
+button:hover {
+  color: var(--font-color) !important;
 }
 
 /* CONNECT */
