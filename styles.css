@@ -667,3 +667,22 @@ button:hover {
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-height: 950px) and (min-height: 700px) {
+  #bio {
+    font-size: 1.3rem;
+  }
+
+  .svg-skills {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .svg {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+
+  .about-background {
+    margin-bottom: 0;
+  }
+}
