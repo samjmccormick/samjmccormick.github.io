@@ -579,6 +579,10 @@ button:hover {
   .card-title {
     font-size: 1.1rem;
   }
+
+  .lets-connect {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -646,6 +650,10 @@ button:hover {
   }
   .card-title {
     font-size: 2rem;
+  }
+
+  .lets-connect {
+    font-size: 7rem;
   }
 }
 
