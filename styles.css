@@ -1,27 +1,27 @@
 /* variables and imports */
 
 :root {
-  --about-color: #e0f0ff;
-  --background-color: #ffefe0;
-  --font-color: #ffd5ad;
-  --font-color-opacity: #ffd5adce;
-  --font-color-links: #a4a5f9;
-  --font-color-links-opacity: #a4a5f950;
-  --font-color-links-border: #a4a5f994;
-  --gradiant-color-one: #070063;
-  --gradiant-color-two: #191477;
-  --gradiant-color-three: #221f83;
-  --gradiant-color-four: #2a288e;
-  --about-gradiant-one: #380063;
-  --about-gradiant-two: #540372;
-  --about-gradiant-three: #64067b;
-  --about-gradiant-four: #740b82;
+  color-scheme: light dark;
+
+  --background-color-light: #fff6e5;
+  --background-color-dark: #181818;
+  --font-color-light: #333d29;
+  --font-color-dark: #c2c5aa;
+
+  --primary-color-light: #c2c5aa;
+  --primary-color-dark: #333d29;
+  --secondary-color-light: #a68a64;
+  --secondary-color-dark: #582f0e;
 }
 
 /* Base reset */
 * {
   margin: 0;
   padding: 0;
+  background-color: light-dark(
+    var(--background-color-light),
+    var(--background-color-dark)
+  ) !important;
 }
 
 /* box-sizing and font sizing -------------------------------- */
@@ -45,81 +45,8 @@ body * {
 }
 
 /* Animated Background ------------------------------------------------------------ */
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.wave {
-  background: var(--font-color-links-opacity);
-  border-radius: 1000% 1000% 0 0;
-  position: fixed;
-  width: 200%;
-  height: 11em;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-    transform: translateX(1);
-  }
-
-  25% {
-    transform: translateX(-25%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  75% {
-    transform: translateX(-25%);
-  }
-
-  100% {
-    transform: translateX(1);
-  }
-}
 
 /* Base styles ------------------------------------------------------------------------ */
-
-body {
-  font-size: 1.8rem;
-  background: linear-gradient(
-    315deg,
-    var(--gradiant-color-one) 3%,
-    var(--gradiant-color-two) 38%,
-    var(--gradiant-color-three) 68%,
-    var(--gradiant-color-four) 98%
-  );
-  animation: gradient 20s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-}
 
 .container {
   max-width: 1000px !important;
@@ -132,11 +59,11 @@ a {
 }
 
 a:link {
-  color: var(--font-color-links);
+  color: light-dark(var(--secondary-color-light), var(--secondary-color-dark));
 }
 
 a:visited {
-  color: var(--font-color-links);
+  color: light-dark(var(--secondary-color-light), var(--secondary-color-dark));
 }
 
 ul {
@@ -160,16 +87,6 @@ img {
   padding: 2rem 0;
   font-weight: 600;
   font-size: 2.6rem;
-  background: linear-gradient(
-    315deg,
-    var(--gradiant-color-one) 3%,
-    var(--gradiant-color-two) 38%,
-    var(--gradiant-color-three) 68%,
-    var(--gradiant-color-four) 98%
-  );
-  animation: gradient 20s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
 }
 
 .nav-link {
@@ -177,13 +94,19 @@ img {
 }
 
 .nav-link:hover {
-  color: var(--font-color) !important;
+  color: light-dark(
+    var(--secondary-color-light),
+    var(--secondary-color-dark)
+  ) !important;
   transform: translateY(8px);
   /* for the animation to not 'snap-back' the transition needs to be in the general rule, not the 'hover rule */
 }
 
 .nav-link.active {
-  color: var(--font-color) !important;
+  color: light-dark(
+    var(--secondary-color-light),
+    var(--secondary-color-dark)
+  ) !important;
   transform: translateY(8px);
 }
 
@@ -191,9 +114,11 @@ img {
 
 .home {
   height: 100vh;
-  color: var(--font-color-opacity);
+  color: light-dark(
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  ) !important;
   font-size: 3rem;
-  text-shadow: 0px 0px 10px var(--font-color-opacity);
 }
 
 #hello {
@@ -211,66 +136,6 @@ img {
   font-weight: 700;
 }
 
-.home-items {
-  animation: home-items 15s linear infinite;
-}
-
-.home-items:nth-of-type(2) {
-  animation: home-items-small 10s linear reverse infinite;
-}
-
-.home-items:nth-of-type(3) {
-  animation: home-items 22s linear reverse infinite;
-}
-
-.home-items:nth-of-type(4) {
-  animation: home-items-small 15s linear reverse infinite;
-}
-
-@keyframes home-items {
-  2% {
-    transform: translateY(1);
-  }
-
-  25% {
-    transform: translateY(-5%);
-  }
-
-  50% {
-    transform: translateY(-10%);
-  }
-
-  75% {
-    transform: translateY(-5%);
-  }
-
-  100% {
-    transform: translateY(1);
-  }
-}
-
-@keyframes home-items-small {
-  2% {
-    transform: translateY(1);
-  }
-
-  25% {
-    transform: translateY(-25%);
-  }
-
-  50% {
-    transform: translateY(-50%);
-  }
-
-  75% {
-    transform: translateY(-25%);
-  }
-
-  100% {
-    transform: translateY(1);
-  }
-}
-
 /* ABOUT ----------------------------------------------------------- */
 
 .about {
@@ -279,38 +144,38 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: whitesmoke;
+  color: light-dark(var(--font-color-light), var(--font-color-dark)) !important;
 }
 
 .about-background {
-  background: linear-gradient(
-    315deg,
-    var(--about-gradiant-one) 3%,
-    var(--about-gradiant-two) 38%,
-    var(--about-gradiant-three) 68%,
-    var(--about-gradiant-four) 98%
-  );
-  animation: gradient 20s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
   opacity: 0.9;
   border-radius: 5px;
   box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
     0 6px 20px 3px rgba(0, 0, 0, 0.19);
-  height: 80%;
+  height: 70%;
   margin-bottom: 20px;
+  background-color: light-dark(
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  ) !important;
 }
 
 .about-container {
   height: 100% !important;
+  background-color: light-dark(
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  ) !important;
 }
 
 #headshot {
   border-radius: 50%;
-  width: 50%;
-  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
-    0 6px 20px 3px rgba(0, 0, 0, 0.19);
-  border: solid 3px var(--font-color-links);
+  width: 30%;
+  position: absolute;
+  top: -60px;
+  left: -110px;
+  border: solid 3px
+    light-dark(var(--secondary-color-light), var(--secondary-color-dark));
 }
 
 h1 {
@@ -321,21 +186,13 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 2rem;
+  padding: 10px;
 }
 
 #bio {
   font-size: 2rem;
   font-weight: 400;
-  background: linear-gradient(
-    315deg,
-    var(--gradiant-color-one) 3%,
-    var(--gradiant-color-two) 38%,
-    var(--gradiant-color-three) 68%,
-    var(--gradiant-color-four) 98%
-  );
-  animation: gradient 20s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
+
   box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
     0 6px 20px 3px rgba(0, 0, 0, 0.19);
   border: solid 1px var(--font-color-links);
@@ -348,59 +205,26 @@ h2 {
   font-weight: 400;
 }
 
+#skills > .row {
+  background-color: light-dark(
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  ) !important;
+}
+
 .svg-skills {
   width: 7rem !important;
   height: 7rem !important;
   padding: 5px;
   border: solid 1px var(--font-color-links);
   margin: 10px;
-  background: linear-gradient(
-    315deg,
-    var(--gradiant-color-one) 3%,
-    var(--gradiant-color-two) 38%,
-    var(--gradiant-color-three) 68%,
-    var(--gradiant-color-four) 98%
-  );
-  animation: gradient 20s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
+
   box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2),
     0 6px 20px 3px rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
 
 /* HEADSHOT */
-
-/* #img-text {
-  width: 50%;
-  max-width: 650px;
-  position: relative;
-  background-color: var(--background-color);
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px rgb(39, 39, 39);
-  margin-bottom: 8px;
-}
-
-#img-text > p {
-  position: absolute;
-  top: 45%;
-  width: 90%;
-  left: 5%;
-  opacity: 0;
-  text-wrap: wrap;
-  text-align: center;
-  transition: opacity 0.5s ease;
-}
-
-
-
-#img-text:hover p {
-  opacity: 1;
-}
-
-#img-text:hover img {
-  opacity: 0;
-} */
 
 /* PROJECTS --------------------------------------------------- */
 
@@ -492,51 +316,6 @@ button:hover {
   color: var(--font-color-links);
   font-size: 10rem;
   text-shadow: 0px 0px 5px var(--font-color-links);
-}
-.social {
-  animation: social 30s linear infinite;
-  display: flex;
-  justify-content: center;
-}
-
-.social:nth-of-type(2) {
-  animation: social 18s linear reverse infinite;
-}
-
-.social:nth-of-type(3) {
-  animation: social 14s reverse infinite;
-}
-
-.social:nth-of-type(4) {
-  animation: social 15s linear reverse infinite;
-}
-.social:nth-of-type(5) {
-  animation: social 15s linear reverse infinite;
-}
-
-.social-container {
-  width: 100%;
-}
-@keyframes social {
-  2% {
-    transform: translateY(1);
-  }
-
-  25% {
-    transform: translateY(-25%);
-  }
-
-  50% {
-    transform: translateY(-50%);
-  }
-
-  75% {
-    transform: translateY(-25%);
-  }
-
-  100% {
-    transform: translateY(1);
-  }
 }
 
 /* Icons ------------------------------- */
