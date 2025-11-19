@@ -55,7 +55,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container overflow-hidden">
       <nav id="nav-bar" class="">
         <a href="#home" class="nav-link">HOME</a>
         <a href="#about" class="nav-link">ABOUT</a>
@@ -68,11 +68,27 @@
           id="home"
           class="home d-flex flex-column justify-content-center"
         >
-          <div class="home-container">
-            <div id="hello" class="home-items">Hello</div>
-            <div id="my-name" class="home-items">my name is</div>
-            <div id="name" class="home-items">Sam McCormick</div>
-            <div id="sub-title" class="home-items">
+          <div class="home-container overflow-hidden rounded-5">
+            <div
+              class="hello-card d-flex flex-row justify-content-evenly align-items-center py-4"
+            >
+              <div>
+                <div id="hello" class="home-items text-center">HELLO</div>
+                <div id="my-name" class="home-items text-center">
+                  my name is
+                </div>
+              </div>
+              <img
+                src="public/headshot.png"
+                alt="headshot"
+                id="headshot"
+                loading="lazy"
+              />
+            </div>
+            <div id="name" class="home-items text-nowrap text-center py-5">
+              Sam McCormick
+            </div>
+            <div id="sub-title" class="home-items text-center py-1">
               <i>I'm an engineer</i>
             </div>
           </div>
@@ -83,12 +99,6 @@
             <div
               class="container position-relative about-container d-flex flex-column justify-content-evenly"
             >
-              <img
-                src="public/headshot.png"
-                alt="headshot"
-                id="headshot"
-                loading="lazy"
-              />
               <div id="bio">
                 "I am a self-taught full-stack web developer with a strong
                 foundation in both front-end and back-end technologies. On the
