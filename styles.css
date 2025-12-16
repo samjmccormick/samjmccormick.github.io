@@ -11,12 +11,19 @@
   --primary-color-dark: #333d29;
   --secondary-color-light: #a68a64;
   --secondary-color-dark: #582f0e;
+  --header-color-one-light: rgba(255, 255, 255, 0.95);
+
+  --header-color-one-dark: rgba(0, 0, 0, 0.95);
+  --header-color-two-light: rgba(255, 255, 255, 0.6);
+  --header-color-two-dark: rgba(0, 0, 0, 0.603);
 
   /* semantic tokens (light by default) */
   --color-bg: var(--background-color-light);
   --color-text: var(--font-color-light);
   --color-surface: var(--primary-color-light);
   --color-accent: var(--secondary-color-light);
+  --color-header-one: var(--header-color-one-light);
+  --color-header-two: var(--header-color-two-light);
   --muted: #6b6b6b;
 
   /* layout */
@@ -43,6 +50,8 @@
     --color-text: var(--font-color-dark);
     --color-surface: var(--primary-color-dark);
     --color-accent: var(--secondary-color-dark);
+    --color-header-one: var(--header-color-one-dark);
+    --color-header-two: var(--header-color-two-dark);
   }
 }
 
@@ -111,6 +120,7 @@ a {
   font-weight: 600;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--color-accent);
@@ -135,8 +145,8 @@ a {
   z-index: 60;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.6)
+    var(--color-header-one),
+    var(--color-header-two)
   );
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
