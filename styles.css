@@ -89,6 +89,14 @@ body {
   font-size: var(--text-base);
 }
 
+.site-main {
+  margin-top: 70px;
+}
+
+section {
+  scroll-margin-top: 30px;
+}
+
 /* container center with padding */
 .container {
   max-width: var(--max-width);
@@ -134,13 +142,17 @@ a {
 /* ===========================
    Header / Navbar
    =========================== */
-.site-header {
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-sm);
   padding-block: var(--space-sm);
-  position: sticky;
+}
+.site-header {
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 60;
   background: linear-gradient(
@@ -401,9 +413,7 @@ dialog.dialog {
   .cards-grid {
     grid-template-columns: 1fr;
   }
-  .site-header {
-    padding-block: 0.6rem;
-  }
+
   .nav-links {
     display: flex;
     gap: 0.5rem;

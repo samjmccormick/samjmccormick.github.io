@@ -3,40 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sam McCormick — Full-Stack Developer</title>
-    <meta
-      name="description"
-      content="Sam McCormick — Full-stack developer portfolio"
-    />
+    <title>Sam McCormick — Engineer</title>
+    <meta name="description" content="Sam McCormick — Personal Website" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header container">
-      <div class="brand">
-        <a href="#home" class="brand-link">Sam McCormick</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <div class="brand">
+          <a href="#home" class="brand-link">Sam McCormick</a>
+        </div>
+        <nav
+          id="site-nav"
+          class="nav-links"
+          data-visible="false"
+          aria-label="Primary"
+        >
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
       </div>
-
-      <nav
-        id="site-nav"
-        class="nav-links"
-        data-visible="false"
-        aria-label="Primary"
-      >
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <button
-        class="nav-toggle"
-        aria-controls="site-nav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="bar"></span><span class="bar"></span
-        ><span class="bar"></span>
-      </button>
     </header>
 
     <main id="home" class="site-main">
