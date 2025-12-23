@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sam McCormick — Engineer</title>
+    <title>Sam McCormick - Engineer</title>
     <meta name="description" content="Sam McCormick — Personal Website" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -48,10 +48,10 @@
               Self-taught full-stack developer focused on clean, accessible web
               apps.
             </p>
-            <p class="hero-cta">
+            <!--     <p class="hero-cta">
               <a class="btn btn-primary" href="#projects">View projects</a>
               <a class="btn btn-secondary" href="#contact">Get in touch</a>
-            </p>
+            </p> -->
           </div>
 
           <div class="hero-media">
@@ -112,69 +112,78 @@
         <h2 id="experience-heading" class="section-title">Experience</h2>
 
         <div class="cards-grid">
-          <!-- 5 placeholder experience cards -->
-          <!-- Each button opens the job modal with id matching data-job -->
-          <article class="exp-card fade-up" data-animate>
-            <h3 class="exp-title">Senior Software Engineer</h3>
-            <p class="exp-company">Acme Corp — 2023–Present</p>
-            <p class="exp-excerpt">
-              Worked on scalable systems and frontend UX improvements.
-            </p>
-            <p>
-              <button class="btn btn-sm btn-outline" data-open-dialog="job-1">
-                View details
-              </button>
-            </p>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
+          >
+            <img src="public/Nori.jpg" alt="Nori" />
+            <div class="exp-meta">
+              <h3 class="exp-title">Senior Software Engineer</h3>
+              <p class="exp-company">Acme Corp — 2023–Present</p>
+              <p class="exp-excerpt">
+                Worked on scalable systems and frontend UX improvements.
+              </p>
+            </div>
           </article>
 
-          <article class="exp-card fade-up" data-animate>
-            <h3 class="exp-title">Frontend Developer</h3>
-            <p class="exp-company">Widget Studio — 2021–2023</p>
-            <p class="exp-excerpt">
-              Built component libraries and refined performance.
-            </p>
-            <p>
-              <button class="btn btn-sm" data-open-dialog="job-2">
-                View details
-              </button>
-            </p>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
+          >
+            <img src="public/Nori.jpg" alt="Nori" />
+            <div class="exp-meta">
+              <h3 class="exp-title">Senior Software Engineer</h3>
+              <p class="exp-company">Acme Corp — 2023–Present</p>
+              <p class="exp-excerpt">
+                Worked on scalable systems and frontend UX improvements.
+              </p>
+            </div>
           </article>
 
-          <article class="exp-card fade-up" data-animate>
-            <h3 class="exp-title">Academic Advisor</h3>
-            <p class="exp-company">State University — 2019–2021</p>
-            <p class="exp-excerpt">
-              Counseled students, wrote curriculum documentation.
-            </p>
-            <p>
-              <button class="btn btn-sm" data-open-dialog="job-3">
-                View details
-              </button>
-            </p>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
+          >
+            <img src="public/Nori.jpg" alt="Nori" />
+            <div class="exp-meta">
+              <h3 class="exp-title">Senior Software Engineer</h3>
+              <p class="exp-company">Acme Corp — 2023–Present</p>
+              <p class="exp-excerpt">
+                Worked on scalable systems and frontend UX improvements.
+              </p>
+            </div>
+          </article>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
+          >
+            <img src="public/Nori.jpg" alt="Nori" />
+            <div class="exp-meta">
+              <h3 class="exp-title">Senior Software Engineer</h3>
+              <p class="exp-company">Acme Corp — 2023–Present</p>
+              <p class="exp-excerpt">
+                Worked on scalable systems and frontend UX improvements.
+              </p>
+            </div>
           </article>
 
-          <article class="exp-card fade-up" data-animate>
-            <h3 class="exp-title">Mechanical Engineer</h3>
-            <p class="exp-company">Engineered Solutions — 2017–2019</p>
-            <p class="exp-excerpt">Design and testing of mechanical systems.</p>
-            <p>
-              <button class="btn btn-sm" data-open-dialog="job-4">
-                View details
-              </button>
-            </p>
-          </article>
-
-          <article class="exp-card fade-up" data-animate>
-            <h3 class="exp-title">Software Intern</h3>
-            <p class="exp-company">PLAYTOON it Inc. — Spring 2025</p>
-            <p class="exp-excerpt">
-              Worked on feature development and CI improvements.
-            </p>
-            <p>
-              <button class="btn btn-sm" data-open-dialog="job-5">
-                View details
-              </button>
-            </p>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
+          >
+            <img src="public/Nori.jpg" alt="Nori" />
+            <div class="exp-meta">
+              <h3 class="exp-title">Senior Software Engineer</h3>
+              <p class="exp-company">Acme Corp — 2023–Present</p>
+              <p class="exp-excerpt">
+                Worked on scalable systems and frontend UX improvements.
+              </p>
+            </div>
           </article>
         </div>
       </section>
@@ -188,8 +197,11 @@
         <h2 id="projects-heading" class="section-title">Projects</h2>
 
         <div class="project-grid">
-          <!-- Example project cards — add more as needed -->
-          <article class="project-card fade-up" data-animate>
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-1"
+          >
             <img
               src="public/projects/personal-website.jpg"
               alt="Personal website screenshot"
@@ -197,15 +209,14 @@
             <div class="project-meta">
               <h3>Personal Website</h3>
               <p class="project-short">This website — portfolio and blog.</p>
-              <p>
-                <button class="btn btn-sm" data-open-dialog="proj-1">
-                  View details
-                </button>
-              </p>
             </div>
           </article>
 
-          <article class="project-card fade-up" data-animate>
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-2"
+          >
             <img
               src="public/projects/storefront-shoppingcart-project.jpg"
               alt="Storefront screenshot"
@@ -215,15 +226,14 @@
               <p class="project-short">
                 Product grid with interactive shopping cart.
               </p>
-              <p>
-                <button class="btn btn-sm" data-open-dialog="proj-2">
-                  View details
-                </button>
-              </p>
             </div>
           </article>
 
-          <article class="project-card fade-up" data-animate>
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-3"
+          >
             <img
               src="public/projects/members-only-project.jpg"
               alt="Members-only project screenshot"
@@ -232,11 +242,6 @@
               <h3>Members Only</h3>
               <p class="project-short">
                 Secure message board with Passport auth.
-              </p>
-              <p>
-                <button class="btn btn-sm" data-open-dialog="proj-3">
-                  View details
-                </button>
               </p>
             </div>
           </article>
@@ -422,7 +427,7 @@
           <li>Improved performance by X%</li>
         </ul>
         <menu class="dialog-actions">
-          <button class="btn" value="close">Close</button>
+          <button class="btn btn-secondary" value="close">Close</button>
         </menu>
       </form>
     </dialog>
