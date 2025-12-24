@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sam McCormick Personal Website" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sam McCormick - Engineer</title>
+    <meta name="description" content="Sam McCormick — Personal Website" />
     <meta
       name="keywords"
       content="HTML, CSS, JavaScript, Web Development, Web Dev, Software Developer, Software Development, React, Full-Stack, Front-End, Back-End, Sam McCormick, Samuel McCormick, Software Engineer"
     />
-
-    <title>Sam McCormick - Full-Stack Developer</title>
-    <meta name="description" content="Full-stack developer" />
-    <meta name="author" content="Sam McCormick" />
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://samjmccormick.com" />
     <meta property="og:type" content="website" />
@@ -33,7 +29,7 @@
     <meta property="twitter:url" content="https://samjmccormick.com" />
     <meta name="twitter:title" content="Sam McCormick Full-Stack Developer" />
     <meta name="twitter:description" content="Full-stack developer" />
-    <
+
     <meta
       name="twitter:image"
       content="https://samjmccormick.com/public/meta-image.png"
@@ -46,717 +42,786 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-Y7YNDBQNZ8"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-Y7YNDBQNZ8");
+  </script>
+
   <body>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="container">
-      <nav id="nav-bar" class="">
-        <a href="#home" class="nav-link">HOME</a>
-        <a href="#about" class="nav-link">ABOUT</a>
-        <a href="#projects" class="nav-link">PROJECTS</a>
-        <a href="#connect" class="nav-link">CONNECT</a>
-      </nav>
-
-      <main data-bs-spy="scroll">
-        <section
-          id="home"
-          class="home d-flex flex-column justify-content-center"
+    <header class="site-header">
+      <div class="container header-container">
+        <div class="brand">
+          <a href="#home" class="brand-link">Sam McCormick</a>
+        </div>
+        <nav
+          id="site-nav"
+          class="nav-links"
+          data-visible="false"
+          aria-label="Primary"
         >
-          <div class="home-container">
-            <div id="hello" class="home-items">Hello</div>
-            <div id="my-name" class="home-items">my name is</div>
-            <div id="name" class="home-items">Sam McCormick</div>
-            <div id="sub-title" class="home-items">
-              <i>I'm a full-stack developer</i>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="about">
-          <div class="about-background">
-            <div
-              class="container about-container d-flex align-items-center flex-column justify-content-evenly"
-            >
-              <img
-                src="public/headshot.png"
-                alt="headshot"
-                id="headshot"
-                loading="lazy"
-              />
-
-              <div id="bio">
-                "I am a self-taught full-stack web developer with a strong
-                foundation in both front-end and back-end technologies. On the
-                front end, I specialize in HTML, CSS, JavaScript, TypeScript,
-                and modern frameworks like React. For the back end, I work with
-                Express and Next.js frameworks, along with PostgreSQL for
-                database management. I utilize the Git Feature Branch Workflow
-                in my projects. I transitioned to full-stack development to join
-                a cutting-edge field with a breadth of opportunities and
-                challenges that will allow me to grow and expand my technical
-                expertise. My background in mechanical engineering and academic
-                advising has equipped me with strong problem-solving,
-                communication, and collaboration skills that I bring to web
-                development."
-              </div>
-              <div id="skills">
-                <div class="row">
-                  <img
-                    class="svg-skills col"
-                    alt="HTML Icon"
-                    src="public/icons/HTML5.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="CSS3 Icon"
-                    src="public/icons/CSS3.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="EJS Icon"
-                    src="public/icons/EJS.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="JavaScript Icon"
-                    src="public/icons/JavaScript.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="TypeScript Icon"
-                    src="public/icons/TypeScript.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="React Icon"
-                    src="public/icons/React.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="Vite Icon"
-                    src="public/icons/Vite.js.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="React Bootstrap Icon"
-                    src="public/icons/React Bootstrap.svg"
-                  />
-
-                  <img
-                    class="svg-skills col"
-                    alt="Bootstrap Icon"
-                    src="public/icons/Bootstrap.svg"
-                  />
-
-                  <img
-                    class="svg-skills col"
-                    alt="Node Icon"
-                    src="public/icons/Node.js.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="Express Icon"
-                    src="public/icons/Express.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="PostgreSQL Icon"
-                    src="public/icons/PostgresSQL.svg"
-                  />
-
-                  <img
-                    class="svg-skills col"
-                    alt="Next.js Icon"
-                    src="public/icons/Next.js.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="Supabase Icon"
-                    src="public/icons/supabase-logo-icon.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="Vercel Icon"
-                    src="public/icons/Vercel.svg"
-                  />
-                  <img
-                    class="svg-skills col"
-                    alt="Git Icon"
-                    src="public/icons/Git.svg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="projects"
-          class="projects d-flex justify-content-center align-items-center"
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <div id="carousel" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://github.com/samjmccormick/samjmccormick.github.io"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/personal-website.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Personal Website</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="HTML Icon"
-                            src="public/icons/HTML5.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Bootstrap Icon"
-                            src="public/icons/Bootstrap.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>Hope you're enjoying it!</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://odin-shoppping-cart.vercel.app/"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/storefront-shoppingcart-project.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Storefront</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="React Icon"
-                            src="public/icons/React.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Vite Icon"
-                            src="public/icons/Vite.js.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="React Bootstrap Icon"
-                            src="public/icons/React Bootstrap.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS3 Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        A storefront web application that features a product
-                        grid displaying items retrieved from the FakeStoreAPI.
-                        Users can browse products, fetch more products on
-                        demand, view detailed descriptions through an
-                        accordion-style toggle, and navigate between pages using
-                        a functional navigation bar with pagination. A fully
-                        interactive shopping cart allows users to add products,
-                        adjust quantities, and view a dynamically updated total
-                        cost.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://github.com/samjmccormick/odin-members-only"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/members-only-project.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Members Only Message Board</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="EJS Icon"
-                            src="public/icons/EJS.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Bootstrap Icon"
-                            src="public/icons/Bootstrap.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="JavaScript Icon"
-                            src="public/icons/JavaScript.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS3 Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Node Icon"
-                            src="public/icons/Node.js.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Express Icon"
-                            src="public/icons/Express.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="PostgreSQL Icon"
-                            src="public/icons/PostgresSQL.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        A secure message board with user authentication
-                        implemented using Passport. Users can log in with
-                        verified identities, and their sessions remain active
-                        until the page is reloaded. For security, passwords are
-                        hashed before storage. Access to post authors and the
-                        ability to create posts is restricted and users must
-                        enter a secret member password to unlock these features.
-                        All user data and posts are stored in a PostgreSQL
-                        database, ensuring efficient data management and
-                        retrieval.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://memory-card-game-seven-chi.vercel.app/"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/memory-game.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Memory Card Game</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="React Icon"
-                            src="public/icons/React.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Vite Icon"
-                            src="public/icons/Vite.js.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="React Bootstrap Icon"
-                            src="public/icons/React Bootstrap.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS3 Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        A memory card game featuring character images from
-                        Robohash. The objective is for users to click as many
-                        unique images as possible without repeating selections.
-                        The game dynamically tracks the current score and
-                        displays the session's high score. Each time a card is
-                        clicked, the cards are shuffled to increase difficulty,
-                        ensuring an engaging and challenging experience.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://odin-cv-project-umber.vercel.app/"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/resume-project.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Resume Creator</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="React Icon"
-                            src="public/icons/React.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Vite Icon"
-                            src="public/icons/Vite.js.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="React Bootstrap Icon"
-                            src="public/icons/React Bootstrap.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS3 Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        A resume creator that allows users to input and format
-                        their resumes through interactive forms. Users can add
-                        personal information, work experience, and education,
-                        with the flexibility to edit or delete any entry.
-                        Additional work and educational experiences can be
-                        included, along with custom informational fields for
-                        each entry to provide further details. The application
-                        ensures a user-friendly experience for building,
-                        updating, and organizing professional resumes
-                        efficiently.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://fcc-pokemon-search.vercel.app/"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/pokemon-search.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Pokemon Search</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="HTML Icon"
-                            src="public/icons/HTML5.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Javascript Icon"
-                            src="public/icons/JavaScript.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        A pokedex that allows users to search for a Pokémon and
-                        retrieve detailed information from the PokeAPI. Upon
-                        entering a Pokémon's name or ID, the application fetches
-                        and displays relevant data, such as its type, abilities,
-                        stats, and sprite. The project provides a simple and
-                        interactive way to explore Pokémon details through
-                        real-time API integration.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper d-flex justify-content-center m-4">
-                  <a
-                    href="https://github.com/samjmccormick/odin-inventory"
-                    class="project-tiles card text-bg-dark"
-                    target="_blank"
-                  >
-                    <img
-                      class="project-img card-img-top"
-                      src="public/projects/inventory-project.jpg"
-                      alt="project"
-                    />
-                    <div class="d-flex flex-column justify-content-evenly">
-                      <div class="card-body text-center">
-                        <div class="card-title">Inventory Management</div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body d-flex justify-content-evenly">
-                          <img
-                            class="svg"
-                            alt="EJS Icon"
-                            src="public/icons/EJS.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Bootstrap Icon"
-                            src="public/icons/Bootstrap.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="JavaScript Icon"
-                            src="public/icons/JavaScript.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="CSS3 Icon"
-                            src="public/icons/CSS3.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Node Icon"
-                            src="public/icons/Node.js.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="Express Icon"
-                            src="public/icons/Express.svg"
-                          />
-                          <img
-                            class="svg"
-                            alt="PostgreSQL Icon"
-                            src="public/icons/PostgresSQL.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-description">
-                      <p>
-                        Pokemon trainer management app. Users can create, view,
-                        update, and delete individual trainers, as well as
-                        manage the Pokémon in their parties. Pokémon information
-                        is fetched from the PokeAPI and stored in a PostgreSQL
-                        database, ensuring that all details about each Pokémon
-                        are readily available. Trainers and Pokémon are
-                        maintained in separate tables, allowing for structured
-                        data organization and efficient retrieval. This system
-                        provides a practical example of relational database
-                        management while integrating external API data.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carousel"
-              data-bs-slide="prev"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                fill="currentColor"
-                class="bi bi-chevron-compact-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"
-                />
-              </svg>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carousel"
-              data-bs-slide="next"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                fill="currentColor"
-                class="bi bi-chevron-compact-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"
-                />
-              </svg>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section>
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+      </div>
+    </header>
 
-        <section
-          id="connect"
-          class="connect d-flex flex-column justify-content-center align-items-center"
-        >
-          <div class="social row lets-connect mb-3">Let's connect</div>
-          <div
-            class="row social-container d-flex justify-content-evenly align-items-center"
+    <main id="home" class="site-main">
+      <!-- HERO -->
+      <section class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <div class="hello" aria-hidden="true">HELLO — my name is</div>
+            <h1 id="hero-heading" class="hero-name">Sam McCormick</h1>
+            <p class="hero-sub">
+              Multi-disciplinary engineer and self-taught full-stack developer.
+            </p>
+            <!--     <p class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View projects</a>
+              <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            </p> -->
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="public/headshot.png"
+              alt="Sam McCormick headshot"
+              class="headshot"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section
+        id="about"
+        class="section container"
+        aria-labelledby="about-heading"
+      >
+        <h2 id="about-heading" class="section-title">About</h2>
+        <div class="prose">
+          <p>
+            I am a self-taught full-stack web developer with expertise in HTML,
+            CSS, JavaScript, TypeScript, React, Node/Express, and PostgreSQL. I
+            enjoy building accessible, maintainable applications and
+            continuously improving my craft.
+          </p>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="section container"
+        aria-labelledby="skills-heading"
+      >
+        <h2 id="skills-heading" class="section-title">Skills</h2>
+        <div class="skill-chips" aria-hidden="false">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Reading</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Thinking</span>
+          <span class="chip">React</span>
+          <span class="chip">Writing</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Node</span>
+          <span class="chip">Typing</span>
+          <span class="chip">Express</span>
+          <span class="chip">Talking</span>
+          <span class="chip">Postgres</span>
+          <span class="chip">Rising</span>
+          <span class="chip">Grinding</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Email</span>
+          <span class="chip">Smiling</span>
+          <span class="chip">Nodding</span>
+          <span class="chip">Considering</span>
+          <span class="chip">Guessing</span>
+          <span class="chip">Express</span>
+          <span class="chip">Talking</span>
+          <span class="chip">Postgres</span>
+          <span class="chip">Rising</span>
+          <span class="chip">Grinding</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Email</span>
+          <span class="chip">Smiling</span>
+          <span class="chip">Nodding</span>
+          <span class="chip">Considering</span>
+          <span class="chip">Guessing</span>
+        </div>
+        <div class="skill-chips2" aria-hidden="false">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Reading</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Thinking</span>
+          <span class="chip">React</span>
+          <span class="chip">Writing</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Node</span>
+          <span class="chip">Typing</span>
+          <span class="chip">Express</span>
+          <span class="chip">Talking</span>
+          <span class="chip">Postgres</span>
+          <span class="chip">Rising</span>
+          <span class="chip">Grinding</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Email</span>
+          <span class="chip">Smiling</span>
+          <span class="chip">Nodding</span>
+          <span class="chip">Considering</span>
+          <span class="chip">Guessing</span>
+          <span class="chip">Postgres</span>
+          <span class="chip">Rising</span>
+          <span class="chip">Grinding</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Email</span>
+          <span class="chip">Smiling</span>
+          <span class="chip">Nodding</span>
+          <span class="chip">Considering</span>
+          <span class="chip">Guessing</span>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section
+        id="experience"
+        class="section container"
+        aria-labelledby="experience-heading"
+      >
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+
+        <div class="cards-grid">
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-1"
           >
-            <div class="social col">
-              <a
-                href="mailto:samjmccormick@gmail.com"
-                class="connect-links"
-                target="_blank"
-                ><div class="visually-hidden">Email Link</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-envelope"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                  ></path>
-                </svg>
-              </a>
+            <img
+              src="public\experience\computer_hero.jpg"
+              alt="Computer Hero"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">Frontend Developer & CI/CD Lead</h3>
+              <p class="exp-company">Omnia Workspace</p>
+
+              <p class="exp-excerpt">
+                Worked on frontend UX development and CI/CD implementation.
+              </p>
             </div>
-            <div class="social col">
-              <a
-                href="https://github.com/samjmccormick/"
-                class="connect-links"
-                target="_blank"
-              >
-                <div class="visually-hidden">Github Link</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-github"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                  ></path>
-                </svg>
-              </a>
+          </article>
+
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-2"
+          >
+            <img
+              src="public\experience\typewriter.jpg"
+              alt="Typewriter"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">Software Developer Intern</h3>
+              <p class="exp-company">PLAYTOON it Inc</p>
+              <p class="exp-excerpt">Developed multipage frontend.</p>
             </div>
-            <div class="social col">
-              <a
-                href="https://www.linkedin.com/in/samjmccormick/"
-                class="connect-links"
-                target="_blank"
-                ><div class="visually-hidden">LinkedIn Link</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                  ></path>
-                </svg>
-              </a>
+          </article>
+
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-3"
+          >
+            <img
+              src="public\experience\graduation.jpg"
+              alt="College Graduation"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">
+                Academic Advisor & Retention Coordinator
+              </h3>
+              <p class="exp-company">Oregon Institute of Technlology</p>
+              <p class="exp-excerpt">
+                Advised students and designed and implemented retention
+                initiatives.
+              </p>
             </div>
-            <div class="social col">
-              <a
-                href="https://raw.githubusercontent.com/samjmccormick/Resume/main/SamMcCormickResume.pdf"
-                class="connect-links"
-                target="_blank"
-                ><div class="visually-hidden">Resume Link</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-file-earmark-person"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                  <path
-                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"
-                  />
-                </svg>
-              </a>
+          </article>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-4"
+          >
+            <img
+              src="public\experience\airplane.jpg"
+              alt="Airplane Landing"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">Production Engineer Lead</h3>
+              <p class="exp-company">
+                Advanced Navigation and Positioning Corporation
+              </p>
+              <p class="exp-excerpt">
+                Lead production floor and factory acceptance testing.
+              </p>
             </div>
+          </article>
+
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-5"
+          >
+            <img
+              src="public\experience\cleanroom.jpg"
+              alt="Cleanroom Worker"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">Field Service Engineer II</h3>
+              <p class="exp-company">Hitachi HTA</p>
+              <p class="exp-excerpt">
+                Perfoemed maintenance and repair on dry-etch semicondutor tools.
+              </p>
+            </div>
+          </article>
+          <article
+            class="exp-card fade-up"
+            data-animate
+            data-open-dialog="job-6"
+          >
+            <img
+              src="public\experience\construction.jpg"
+              alt="Construction"
+              loading="lazy"
+            />
+            <div class="exp-meta">
+              <h3 class="exp-title">Discipline Equipment Engineer</h3>
+              <p class="exp-company">Kiewit Corporation</p>
+              <p class="exp-excerpt">
+                Tracked and forecasted costs for the equipment department of a
+                $1B infrastruction project.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section
+        id="projects"
+        class="section container"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+
+        <div class="project-grid">
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-1"
+          >
+            <img
+              src="public/projects/personal-website.jpg"
+              alt="Personal website screenshot"
+            />
+            <div class="project-meta">
+              <h3>Personal Website</h3>
+              <p class="project-short">
+                This website — portfolio and experience.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-2"
+          >
+            <img
+              src="public/projects/storefront-shoppingcart-project.jpg"
+              alt="Storefront screenshot"
+            />
+            <div class="project-meta">
+              <h3>Storefront</h3>
+              <p class="project-short">
+                Product grid with interactive shopping cart.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-3"
+          >
+            <img
+              src="public/projects/members-only-project.jpg"
+              alt="Members-only project screenshot"
+            />
+            <div class="project-meta">
+              <h3>Members Only</h3>
+              <p class="project-short">
+                Secure message board with Passport auth.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="section container"
+        aria-labelledby="contact-heading"
+      >
+        <h2 id="contact-heading" class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <a href="mailto:samjmccormick@gmail.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+            Email</a
+          >
+
+          <a
+            href="https://github.com/samjmccormick"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github"
+            >
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+              />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            GitHub</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/samjmccormick/"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin-icon lucide-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn</a
+          >
+
+          <a
+            href="https://raw.githubusercontent.com/samjmccormick/Resume/main/SamMcCormickResume.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-file-icon lucide-file"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              />
+              <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+            </svg>
+            Resume</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <small
+        >© <span id="year"></span> Sam McCormick — All rights reserved.</small
+      >
+    </footer>
+
+    <!-- ------------------------
+       DIALOGS (native) — Projects
+       ------------------------ -->
+    <dialog id="proj-1" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h3>Personal Website</h3>
+        <p>
+          Full details about the personal website project go here — goals,
+          stack, challenges, links.
+        </p>
+        <ul>
+          <li>Tech: HTML, CSS, JS</li>
+          <li>Notes: Accessible, responsive, portfolio</li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/samjmccormick/samjmccormick.github.io"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="proj-2" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h3>Storefront</h3>
+        <p>Details about storefront project.</p>
+        <menu class="dialog-actions">
+          <button class="btn" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="proj-3" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h3>Members Only</h3>
+        <p>Details about members only message board.</p>
+        <menu class="dialog-actions">
+          <button class="btn" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <!-- ------------------------
+       DIALOGS (native) — Jobs 
+       ------------------------ -->
+    <dialog id="job-1" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Frontend Developer & CI/CD Lead</h3>
+            <p>June 2025 – Sept 2025</p>
           </div>
-        </section>
-      </main>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+          <div>Omnia Workspace</div>
+        </div>
+
+        <ul>
+          <li>
+            Refactored a single 800-line frontend file into a 300-line file with
+            reusable hooks and functions using a standard React project
+            structure, improving functionality, readability, and enforcing
+            strict TypeScript typing
+          </li>
+          <li>
+            Built and integrated secure authentication flows (login and signup)
+            with backend APIs
+          </li>
+          <li>
+            Implemented Tailwind CSS to modernize styling and enhance
+            maintainability
+          </li>
+          <li>
+            Automated documentation creation and publishing using TypeDoc and
+            GitHub Pages
+          </li>
+          <li>
+            Promoted to lead CI/CD after first week; managed pipelines and
+            development workflows
+          </li>
+          <li>
+            Implemented CI/CD pipelines in GitHub Actions to automatically build
+            and test applications on each PR, reducing manual build effort by
+            100%
+          </li>
+          <li>
+            Configured GitHub repository policies, including branch protections,
+            PR templates, and review requirements, preventing direct pushes to
+            main and reducing merge conflicts for 8 developers
+          </li>
+          <li>
+            Conducted 10+ PR reviews, ensuring code quality, consistency, and
+            compliance with team standards
+          </li>
+          <li>
+            Integrated Azure DevOps for project tracking and task assignments
+            across GitHub repositories
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="job-2" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Software Developer Intern</h3>
+            <p>Apr 2025 – Aug 2025</p>
+          </div>
+          <div>PLAYTOON It Inc</div>
+        </div>
+
+        <ul>
+          <li>
+            Collaborated with a cross-functional team to design, implement, and
+            deploy a new platform in an Agile environment
+          </li>
+          <li>
+            Developed web interfaces and backend functionality using TypeScript,
+            React, Tailwind, Next, and SQL
+          </li>
+          <li>
+            Integrated with GitHub for version control, ensuring seamless
+            collaboration and code quality
+          </li>
+          <li>
+            Submitted 13 PRs with a 100% approval rate, implementing 12 new
+            features
+          </li>
+          <li>
+            Developed multiple reusable frontend components optimized for
+            maintainability and scalability
+          </li>
+          <li>
+            Ensured all components were mobile responsive and accessible
+            following WCAG 2.1 guidelines and ARIA roles
+          </li>
+          <li>
+            Implemented smooth UI animations using Framer Motion to enhance user
+            experience
+          </li>
+          <li>
+            Built and configured application routing with Next.js to support
+            seamless navigation and scalability
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="job-3" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Academic Advisor & Retention Coordinator</h3>
+            <p>Nov 2021 – June 2024</p>
+          </div>
+          <div>Oregon Institute of Technology</div>
+        </div>
+
+        <ul>
+          <li>
+            Designed and implemented retention initiatives that boosted student
+            persistence by 2% year-over-year, directly impacting institutional
+            growth
+          </li>
+          <li>
+            Advised and supported a caseload of 700+ undergraduates, helping
+            students navigate curriculum, policies, and career pathways
+          </li>
+          <li>
+            Leveraged data and predictive analytics to identify at-risk
+            students, prioritize outreach, and improve retention
+          </li>
+          <li>
+            Built strong partnerships with faculty, staff, and administration to
+            align student support with institutional goals
+          </li>
+          <li>
+            Interpreted and applied complex academic policies and curriculum
+            requirements, ensuring compliance and student success
+          </li>
+          <li>
+            Increased student engagement by offering multi-channel advising
+            (email, text, Zoom, Microsoft Teams, phone), improving accessibility
+            and response rates
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="job-4" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Production Engineer Lead</h3>
+            <p>Jan 2020 – Aug 2021</p>
+          </div>
+          <div>Advanced Navigation and Positioning Corporation</div>
+        </div>
+
+        <ul>
+          <li>
+            Produced 3 Category I Instrument Landing Systems, increasing
+            production by 50% from the previous year
+          </li>
+          <li>Implemented 15 new product features to meet customer needs</li>
+          <li>
+            Used previous labor, purchasing, and inventory data to forecast the
+            build schedule with 90% accuracy
+          </li>
+          <li>
+            Hired and trained 4 production technicians, doubling the headcount
+            of the department
+          </li>
+          <li>Performed Factory Acceptance Tests on all 3 systems produced</li>
+          <li>
+            Assembled, tested, and configured all mechanical, electrical, and
+            software components of the product
+          </li>
+          <li>
+            Fabricated new parts and assemblies to solve mechanical problems and
+            ensure product delivery
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="job-5" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Field Service Engineer II</h3>
+            <p>Dec 2017 - Jan 2020</p>
+          </div>
+          <div>Hitachi HTA</div>
+        </div>
+
+        <ul>
+          <li>
+            Maintained, repaired, and troubleshot Hitachi HTA dry etch tools,
+            including hydraulic, vacuum, and mechatronic systems
+          </li>
+          <li>Implemented hardware, software, and firmware upgrades</li>
+          <li>
+            Interfaced with product design and product support to solve new and
+            unique problems
+          </li>
+          <li>
+            Communicated and delegated tasks effectively in a team environment
+            to ensure efficient service and customer satisfaction
+          </li>
+          <li>
+            Created and improved task procedures and best-known methods to
+            standardize and streamline work
+          </li>
+          <li>
+            Performed the most Clean I procedures without a reclean in 2018 and
+            2019
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="job-6" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <div>
+          <div class="dialog-header">
+            <h3>Discipline Equipment Engineer</h3>
+            <p>June 2016 - May 2017</p>
+          </div>
+          <div>Kiewit Corporation</div>
+        </div>
+
+        <ul>
+          <li>
+            Tracked, managed, and forecasted a $500K monthly portfolio for the
+            equipment maintenance department within a $1B infrastructure
+            construction contract
+          </li>
+          <li>
+            Collaborated with business partners to ensure schedule, budget, and
+            contract were maintained and improved upon to provide the Texas
+            Department of Transportation with the most innovative and safe
+            solution
+          </li>
+          <li>
+            Implemented pivot tables and complex data analysis in Excel to
+            shorten monthly forecast time
+          </li>
+          <li>
+            Supervised, managed, and apportioned the work of three subordinate
+            engineers while ensuring compliance with company and regulatory
+            policy
+          </li>
+        </ul>
+        <menu class="dialog-actions">
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script type="module" src="scripts.js"></script>
   </body>
 </html>
