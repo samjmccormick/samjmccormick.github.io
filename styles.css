@@ -251,6 +251,7 @@ a {
   color: var(--muted);
   margin-bottom: var(--space-md);
 }
+
 .headshot {
   width: 100%;
   max-width: 320px;
@@ -270,11 +271,26 @@ a {
   margin-bottom: 0.8rem;
 }
 
+#skills {
+  overflow: hidden;
+}
+
 .skill-chips {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.6rem;
+  margin: 0.6rem 0;
+  animation: animate_skills 60s linear infinite;
 }
+
+.skill-chips2 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.6rem;
+  margin: 0.6rem 0;
+  animation: animate_skills 60s linear infinite reverse;
+}
+
 .chip {
   background: linear-gradient(180deg, var(--primary));
   padding: 0.45rem 0.8rem;
@@ -282,6 +298,15 @@ a {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid var(--secondary);
+}
+
+@keyframes animate_skills {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* ===========================
@@ -302,6 +327,7 @@ a {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   display: flex;
   flex-direction: row;
+  max-width: 650px;
 }
 .exp-card:hover {
   transform: translateY(-5px) !important;
@@ -366,8 +392,32 @@ a {
    =========================== */
 .contact-grid {
   display: grid;
-  gap: 0.6rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background-color: var(--accent);
+  padding: var(--space-md);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.contact-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.18s ease, transform 0.18s ease;
+  font-size: var(--text-xl);
+}
+.contact-grid a:hover {
+  color: color-mix(in srgb, var(--text) 80%, black);
+  transform: translateY(-5px);
+}
+
+svg {
+  width: 30px;
+  height: 30px;
 }
 .site-footer {
   padding: var(--space-md);
@@ -386,7 +436,7 @@ dialog.dialog {
   width: calc(100% - 2rem);
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
   color: var(--text);
-  background: var(--secondary);
+  background: var(--background);
 }
 .dialog::backdrop {
   background: rgba(0, 0, 0, 0.651);
@@ -395,7 +445,12 @@ dialog.dialog {
   padding: var(--space-md);
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @keyframes dialog-animation {
@@ -459,6 +514,12 @@ dialog.dialog {
   .nav-links {
     display: flex;
     gap: 0.5rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
