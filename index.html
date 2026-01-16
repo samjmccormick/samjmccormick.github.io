@@ -99,10 +99,6 @@
             <p class="hero-sub">
               Multi-disciplinary engineer and self-taught full-stack developer.
             </p>
-            <!--     <p class="hero-cta">
-              <a class="btn btn-primary" href="#projects">View projects</a>
-              <a class="btn btn-secondary" href="#contact">Get in touch</a>
-            </p> -->
           </div>
 
           <div class="hero-media">
@@ -124,10 +120,13 @@
         <h2 id="about-heading" class="section-title">About</h2>
         <div class="prose">
           <p>
-            I am a self-taught full-stack web developer with expertise in HTML,
-            CSS, JavaScript, TypeScript, React, Node/Express, and PostgreSQL. I
-            enjoy building accessible, maintainable applications and
-            continuously improving my craft.
+            I am a multi-disciplinary engineer and self-taught full-stack web
+            developer with expertise in HTML, CSS, JavaScript, TypeScript,
+            React, Node/Express, and PostgreSQL. I have worked in the design,
+            implementation, quality, production, and maintenance of both
+            software and hardware products. I am truly passionate about baking
+            bread and making terrible beats, but in the interest of not
+            monetizing my hobbies, I remain an engineer.
           </p>
         </div>
       </section>
@@ -396,6 +395,37 @@
               </p>
             </div>
           </article>
+
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-4"
+          >
+            <img
+              src="public/projects/memory-game.jpg"
+              alt="Members-only project screenshot"
+            />
+            <div class="project-meta">
+              <h3>Memory Game</h3>
+              <p class="project-short">
+                Memory card game, click as many unique cards as you can!
+              </p>
+            </div>
+          </article>
+          <article
+            class="project-card fade-up"
+            data-animate
+            data-open-dialog="proj-5"
+          >
+            <img
+              src="public/projects/resume-project.jpg"
+              alt="Members-only project screenshot"
+            />
+            <div class="project-meta">
+              <h3>Resume Creator</h3>
+              <p class="project-short">Interactive resume builder.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -510,22 +540,19 @@
       <form method="dialog" class="dialog-inner">
         <h3>Personal Website</h3>
         <p>
-          Full details about the personal website project go here — goals,
-          stack, challenges, links.
+          Personal website for portfolio and experience. Single HTML page with
+          limited scripting. Light and dark modes implemented through CSS media
+          rules.
         </p>
-        <ul>
-          <li>Tech: HTML, CSS, JS</li>
-          <li>Notes: Accessible, responsive, portfolio</li>
-        </ul>
+        <p>HTML | CSS | JS</p>
         <menu class="dialog-actions">
-          <button class="btn btn-primary" value="close">Close</button>
           <a
             class="btn btn-secondary"
             href="https://github.com/samjmccormick/samjmccormick.github.io"
             target="_blank"
             rel="noopener"
-            >View on GitHub</a
-          >
+            >GitHub</a
+          ><button class="btn btn-primary" value="close">Close</button>
         </menu>
       </form>
     </dialog>
@@ -533,9 +560,29 @@
     <dialog id="proj-2" class="dialog">
       <form method="dialog" class="dialog-inner">
         <h3>Storefront</h3>
-        <p>Details about storefront project.</p>
+        <p>
+          A dynamic storefront web application that retrieves products from the
+          FakeStoreAPI. Users can browse a product grid, view detailed
+          descriptions, navigate with pagination, and manage their shopping cart
+          with real-time updates.
+        </p>
+        <p>JavaScript | React | React-Bootstrap | CSS</p>
         <menu class="dialog-actions">
-          <button class="btn" value="close">Close</button>
+          <a
+            class="btn btn-secondary"
+            href="https://odin-shoppping-cart.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            >Live Demo</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/samjmccormick/odin-shoppping-cart"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <button class="btn btn-primary" value="close">Close</button>
         </menu>
       </form>
     </dialog>
@@ -543,9 +590,85 @@
     <dialog id="proj-3" class="dialog">
       <form method="dialog" class="dialog-inner">
         <h3>Members Only</h3>
-        <p>Details about members only message board.</p>
+        <p>
+          A secure message board application with user authentication powered by
+          Passport. Users must log in with verified identities, and sessions
+          remain active until the page is reloaded. Passwords are securely
+          hashed before storage. Access to post authors and the ability to
+          create posts are restricted, requiring users to enter a secret member
+          password.
+        </p>
+        <p>HTML | CSS | Boostrap | Node | Express | PostgreSQL | Passport</p>
         <menu class="dialog-actions">
-          <button class="btn" value="close">Close</button>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/samjmccormick/odin-members-only"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="proj-4" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h3>Memory Game</h3>
+        <p>
+          A fun and challenging memory card game featuring character images
+          generated by Robohash. The goal is to click as many unique images as
+          possible without repeating a selection. Every time a card is clicked,
+          the board shuffles, making it progressively harder to track images and
+          beat your high score!
+        </p>
+        <p>JavaScript | React | Vite | CSS | React-Bootstrap</p>
+        <menu class="dialog-actions">
+          <a
+            class="btn btn-secondary"
+            href="https://memory-card-game-seven-chi.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            >Live Demo</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/samjmccormick/odin-memory-card"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          ><button class="btn btn-primary" value="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="proj-5" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h3>Resume Creator</h3>
+        <p>
+          An interactive resume builder that allows users to input, format, and
+          organize their resumes efficiently. Users can add personal
+          information, work experience, and education, with the flexibility to
+          edit, delete, and customize entries. The application provides an
+          intuitive experience for creating, updating, and structuring
+          professional resumes.
+        </p>
+        <p>JavaScript | React | Vite | CSS | React-Bootstrap</p>
+        <menu class="dialog-actions">
+          <a
+            class="btn btn-secondary"
+            href="https://odin-cv-project-umber.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            >Live Demo</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/samjmccormick/odin-cv-project"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          ><button class="btn btn-primary" value="close">Close</button>
         </menu>
       </form>
     </dialog>
